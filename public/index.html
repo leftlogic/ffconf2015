@@ -76,10 +76,10 @@
       }
 
       .zoom article {
-        -webkit-animation: ffzoom 0.75s linear 1s 1 forwards;
-           -moz-animation: ffzoom 0.75s linear 1s 1 forwards;
-             -o-animation: ffzoom 0.75s linear 1s 1 forwards;
-                animation: ffzoom 0.75s linear 1s 1 forwards;
+        -webkit-animation: ffzoom 0.75s linear 0s 1 forwards;
+           -moz-animation: ffzoom 0.75s linear 0s 1 forwards;
+             -o-animation: ffzoom 0.75s linear 0s 1 forwards;
+                animation: ffzoom 0.75s linear 0s 1 forwards;
       }
 
       @-webkit-keyframes ffzoom { to { -webkit-transform: scale(1); }  }
@@ -100,12 +100,12 @@
         </article>
       </main>
     </div>
+    <script src="/js/starfield.js"></script>
     <script>
     setTimeout(function () {
       document.body.className = 'zoom';
     }, 0);
     console.log('Ticket release on @ppk\'s birthday - do your research, set your alarms!');
     </script>
-    <script src="/js/starfield.js"></script>
   </body>
 </html>
