@@ -1,0 +1,27 @@
+{
+  "name": "ffconf2015",
+  "private": true,
+  "version": "1.0.0",
+  "description": "ffconf2015",
+  "main": "lib/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leftlogic/ffconf2015.git"
+  },
+  "author": "Remy Sharp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leftlogic/ffconf2015/issues"
+  },
+  "homepage": "http://2015.ffconf.org",
+  "dependencies": {
+    "compression": "^1.4.3",
+    "express": "^4.12.2",
+    "express-hbs": "^0.8.2",
+    "express-static": "^1.0.3",
+    "moment": "^2.9.0"
+  }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ffconf 2015</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+      @font-face {
+        font-family: 'hyperspacebold';
+        src: url('/fonts/hyperspace.eot');
+        src: url('/fonts/hyperspace.eot?#iefix') format('embedded-opentype'),
+             url('/fonts/hyperspace.woff2') format('woff2'),
+             url('/fonts/hyperspace.woff') format('woff'),
+             url('/fonts/hyperspace.ttf') format('truetype'),
+             url('/fonts/hyperspace.svg#hyperspacebold') format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+      html, body {
+        overflow: hidden;
+        background: #000;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+      }
+      .fullScreen {
+          height: 100%;
+      }
+      main {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: table;
+        width: 100%;
+        height: 100%;
+      }
+      main article {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        font-family: "hyperspacebold";
+        font-size: 29px;
+        letter-spacing: 5px;
+        color: #649036;
+      }
+      main article svg {
+        display: block;
+        position: relative;
+        z-index: 2;
+        margin: auto;
+        -webkit-transform: perspective( 262px ) rotateX( 45deg );
+        -moz-transform: perspective( 262px ) rotateX( 45deg );
+        -o-transform: perspective( 262px ) rotateX( 45deg );
+        transform: perspective( 262px ) rotateX( 45deg );
+        width: 212px;
+        height: 212px;
+      }
+      main article svg path {
+        stroke: #66acdd;
+        stroke-width: 3px;
+      }
+
+      article {
+        -webkit-transform: scale(0.1);
+        -moz-transform: scale(0.1);
+        -o-transform: scale(0.1);
+        transform: scale(0.1);
+
+        -webkit-transition: all 750ms ease;
+        -moz-transition: all 750ms ease;
+        -o-transition: all 750ms ease;
+        transition: all 750ms ease;
+      }
+
+      .zoom article {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <div class="fullScreen" id="fullScreen">
+      <canvas id="canvas2d"></canvas>
+      <main>
+        <article>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 282 260.667"><path stroke-miterlimit="10" d="M61 1v20.01l-20-.01v20h-20v20h-20v198.667h220v-20h20v-20h20v-19.667h20v-199h-220zm160 76h-30v26.667h30v33.333h-30v80h-30v-80h-50v80h-30.731l-.003-80h-19.266v-33h20v-60.333h60v33.333h-30v26.667h50v-60h60v33.333z" fill="none" shape-rendering="crispEdges" />ffconf</svg>
+          <p>Nov 6th 2015</p>
+        </article>
+      </main>
+    </div>
+    <script>
+    setTimeout(function () {
+      document.body.className = 'zoom';
+    }, 0)
+    </script>
+    <script src="/js/starfield.js"></script>
+  </body>
+</html>
