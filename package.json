@@ -5,8 +5,8 @@
   "description": "ffconf2015",
   "main": "server.js",
   "scripts": {
-    "start": "node_modules/.bin/harp server",
-    "test": "node_modules/.bin/harp compile"
+    "start": "node_modules/harp/bin/harp server",
+    "test": "node_modules/harp/bin/harp compile"
   },
   "repository": {
     "type": "git",
