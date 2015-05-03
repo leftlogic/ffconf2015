@@ -9,10 +9,10 @@ section.main(role='region', aria-labelledby='workshops')
             span.button.button-disabled Sold Out
           else
             a.button(href=workshop.ticket.url, target='_blank') Tickets £#{workshop.ticket.price}
-              small + VAT
+              small  + VAT
         else
           span.button.button-disabled Tickets £#{workshop.ticket.price}
-            small + VAT
+            small  + VAT
         sub.button-sub Includes Conference Ticket
     section.workshop-wrapper.sub-hr(id=workshop.slug)
       header
