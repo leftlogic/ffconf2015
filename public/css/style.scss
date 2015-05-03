@@ -735,15 +735,11 @@ p {
 .left-logic {
   background-image: url(../images/left-logic.png);
   background-position: top;
-  background-size: 113px, 23px;
+  background-size: 113px 23px;
   border-bottom: 0 none;
   overflow: hidden;
   display: block;
   text-indent: -200%;
-
-  &:hover, &:focus, &:active {
-    background-position: bottom;
-  }
 }
 
 
