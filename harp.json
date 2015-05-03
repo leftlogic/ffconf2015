@@ -6,6 +6,7 @@
     "startTime": "09:00",
     "analytics": "UA-1656750-37",
     "id": "ffconf-2015",
+    "ticketPrice": "160",
     "source": "https://github.com/leftlogic/ffconf2015",
     "config": {
       "phase": 4,
