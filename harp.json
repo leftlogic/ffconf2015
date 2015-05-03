@@ -1,0 +1,28 @@
+{
+  "globals": {
+    "siteTitle": "ffconf :: JavaScript Conference :: 6th November 2015",
+    "date": "2015-11-06",
+    "analytics": "UA-1656750-37",
+    "config": {
+      "phase": 4,
+      "soldout": {
+        "conference": true,
+        "workshops": true,
+        "debug-and-tools": true,
+        "testing": true
+      },
+      "mode": "schedule",
+      "comments": {
+        "mode-options": "titles|speakers|schedule // just a comment",
+        "phase-options": {
+          "0": "before selling any ticket",
+          "0.5": "release of topics before selling tickets",
+          "1": "first batch of tickets",
+          "2": "second batch of tickets",
+          "3": "release of the full sessions",
+          "4": "after the conference"
+        }
+      }
+    }
+  }
+}
