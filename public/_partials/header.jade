@@ -3,8 +3,6 @@
 - text.location = 'Brighton UK.'
 - text.date = '6 November 2015'
 - text.datetime = '2015-11-06T09:00'
-- text.binary1 = '111 1011 11111011110'
-- text.binary2 = '1110000100 - 11100001000'
 
 - var line = 'Tickets will be sold on \n9-July and 16-July at 11am.'
 - var button = ''
@@ -70,9 +68,6 @@ header.masthead(role='banner')
       div#monitor.screen
         //- non svg version
         div.screen-svg-alternate
-          div.screen-date
-            time.screen-day(datetime=text.datetime)= text.binary1
-            time.screen-time(datetime=text.datetime)= text.binary2
 
           h1.logo(role='heading', aria-level='1')
             span Full Frontal 2015
@@ -96,12 +91,3 @@ header.masthead(role='banner')
                   a.screen-button(href=ticketUrl, target='_blank')!= button
                 else
                   span.screen-button= button
-      div.screen-shadow
-
-  div.machine#machine
-    div.case
-      div.mother
-      div.case-button-wrapper
-        div.case-light(class=on?'case-light-on':null)
-        div.case-button(class=on?'case-button-on':null)
-    div#vents.vents(class=on?'vents-on':null)
