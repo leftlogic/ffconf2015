@@ -10,7 +10,7 @@ section.main(class='session-style-' + config.mode, role='region', aria-labelledb
         if config.soldout.conference
           span.button.button-disabled Sold Out
         else
-          a.button(href='https://leftlogic.stagehq.com/', target='_blank') Tickets £#{ticketPrice}
+          a.button(href=ticketUrl, target='_blank') Tickets £#{ticketPrice}
             small  + VAT
       else
         span.button.button-disabled Tickets £#{ticketPrice}
