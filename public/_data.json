@@ -71,47 +71,56 @@
     "available": false,
     "full": [
       {
+        "name": "Google Chrome",
         "url": "https://developers.google.com/live/chrome/",
-        "img": "chrome.png",
-        "blurb": "Google’s mission is to organise the world’s information and make it universally accessible and useful. [Find out more](https://developers.google.com/live/chrome/)."
+        "img": "chrome.png"
       },
       {
+        "name": "Amazon",
         "url": "https://uk-amazon.icims.com/jobs/search?ss=1&searchCompany=1454350&mobile=false&width=1677&height=929&bga=true&needsRedirect=false",
         "img": "amazon.png"
       }
     ],
     "half": [
       {
+        "name": "brandwatch",
         "url": "http://www.brandwatch.com/",
         "img": "brandwatch.png"
       },
       {
+        "name": "DigitalOcean",
         "url": "https://digitalocean.com/",
         "img": "digitalocean1.png"
       },
       {
+        "name": "NodeSource",
         "url": "https://nodesource.com",
         "img": "nodesource1.png"
       },
       {
+        "name": "Web Applications UK",
         "url": "http://www.webapplicationsuk.com/",
         "img": "webappsuk.png"
       }
     ],
     "small": [
       {
+        "name": "JS Bin",
         "url": "http://jsbin.com/?utm_source=ff2015-site&utm_medium=sponsor&utm_campaign=ff2015-site",
         "img": "jsbin-sponsor1.png"
       },
       {
+        "name": "Twilio",
         "url": "http://twilio.com",
         "img": "twilio.png"
       },
       {
+        "name": "Full Stack Training",
         "url": "http://www.fullstacktraining.com/",
         "img": "fst.png"
       },
       {
+        "name": "Media Molecule",
         "url": "http://www.mediamolecule.com/jobs/javascript_developer",
         "img": "mediamolecule.png"
       }

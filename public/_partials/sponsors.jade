@@ -13,5 +13,5 @@ section.main.main-sponsors(role='region', aria-labelledby='sponsors')
         div.sponsors-wrapper
           each sponsor in cat
             section.sponsor(class='sponsor-' + key)
-              a(href=sponsor.url, target="_blank")
-                img(src='/images/sponsors/' + sponsor.img, alt='Sponsor logo')
+              a(href=sponsor.url, target="_blank", title=sponsor.name)
+                img(src='/images/sponsors/' + sponsor.img, alt=sponsor.name)
