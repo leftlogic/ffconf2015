@@ -1,0 +1,380 @@
+{
+  "locations": [
+    {
+      "type": "Venues",
+      "icon": "location",
+      "location": [
+        {
+          "name": "Duke of Yorks",
+          "detail": "Conference",
+          "url": "http://www.picturehouses.co.uk/cinema/Duke_Of_Yorks/"
+        },
+        {
+          "name": "The Lighthouse",
+          "detail": "Workshops",
+          "url": "http://goo.gl/maps/GTYX"
+        },
+        {
+          "name": "The Fountainhead",
+          "detail": "Pre Party",
+          "url": "http://goo.gl/maps/6FH8"
+        },
+        {
+          "name": "The Loft",
+          "detail": "After Party",
+          "url": "http://goo.gl/maps/xe61"
+        }
+      ]
+    },
+    {
+      "type": "Hotels",
+      "icon": "home",
+      "location": [
+        {
+          "name": "Jury's Inn",
+          "url": "http://brightonhotels.jurysinns.com/",
+          "detail": "from £64",
+          "extra": "next to Train station & close to venue",
+          "extra-discount": "quote \"Left Logic\" for the discount"
+        },
+        {
+          "name": "Travellodge",
+          "url": "http://www.travelodge.co.uk/hotels/18/Brighton-hotel",
+          "detail": "from £28"
+        },
+        {
+          "name": "My Hotel",
+          "url": "http://www.myhotels.com/my-hotel-brighton/index.html",
+          "detail": "from £80",
+          "extra": "standard and superior respectively"
+        },
+        {
+          "name": "Old Ship Hotel",
+          "url": "http://www.thehotelcollection.co.uk/hotels/old-ship-brighton-hotel/",
+          "detail": "from £82",
+          "extra": "close to after party venue"
+        }
+      ]
+    },
+    {
+      "type": "Food & Drink",
+      "icon": "beer",
+      "location": [
+        {"name": "Bardsley's", "detail": "fish 'n chips", "url": "http://www.bardsleys-fishandchips.co.uk/map"},
+        {"name": "The Open House", "detail": "good pub food", "url": "http://goo.gl/maps/eZPV8"},
+        {"name": "Circus Circus", "detail": "pub serving Thai food", "url": "http://goo.gl/VNUwb"},
+        {"name": "La Choza", "detail": "mexican street food", "url": "http://www.hareandhoundsbrighton.com/"}
+      ]
+    }
+  ],
+  "sponsors": {
+    "available": false,
+    "full": [
+      {
+        "url": "https://developers.google.com/live/chrome/",
+        "img": "chrome.png",
+        "blurb": "Google’s mission is to organise the world’s information and make it universally accessible and useful. [Find out more](https://developers.google.com/live/chrome/)."
+      },
+      {
+        "url": "https://uk-amazon.icims.com/jobs/search?ss=1&searchCompany=1454350&mobile=false&width=1677&height=929&bga=true&needsRedirect=false",
+        "img": "amazon.png"
+      }
+    ],
+    "half": [
+      {
+        "url": "http://www.brandwatch.com/",
+        "img": "brandwatch.png"
+      },
+      {
+        "url": "https://digitalocean.com/",
+        "img": "digitalocean1.png"
+      },
+      {
+        "url": "https://nodesource.com",
+        "img": "nodesource1.png"
+      },
+      {
+        "url": "http://www.webapplicationsuk.com/",
+        "img": "webappsuk.png"
+      }
+    ],
+    "small": [
+      {
+        "url": "http://jsbin.com/?utm_source=ff2015-site&utm_medium=sponsor&utm_campaign=ff2015-site",
+        "img": "jsbin-sponsor1.png"
+      },
+      {
+        "url": "http://twilio.com",
+        "img": "twilio.png"
+      },
+      {
+        "url": "http://www.fullstacktraining.com/",
+        "img": "fst.png"
+      },
+      {
+        "url": "http://www.mediamolecule.com/jobs/javascript_developer",
+        "img": "mediamolecule.png"
+      }
+    ]
+  },
+  "sessions": {
+    "startTime": "2015-11-06 09:00",
+    "sessions": [
+      {
+        "break": true,
+        "title": "Registration",
+        "duration": 40
+      },
+      {
+        "break": true,
+        "title": "Opening remarks",
+        "duration": 10
+      },
+      {
+        "duration": 40,
+        "title": "Building the Physical Web together",
+        "speaker": {
+          "name": "Scott Jenson",
+          "twitter": "scottjenson",
+          "photo": "scott.jpg"
+        },
+        "description": "How can we, as the web community, build the next generation of the web, the Physical Web, together?",
+        "bio": "",
+        "links": [],
+        "slides": false,
+        "audio": "http://media.ffconf.org/2014/1-scott.mp3",
+        "video": "https://www.youtube.com/watch?v=JBIg3eZ0e6A&index=1&list=PLXmT1r4krsTqrwW2jjXIXuCtFQ-5BIn-s"
+      },
+      {
+        "duration": 40,
+        "title": "Moving seamlessly through offline and online",
+        "speaker": {
+          "name": "Caolan McMahon",
+          "twitter": "caolan",
+          "photo": "caolan.jpg"
+        },
+        "description": "Unlike the always-wired machines of the past, computers are now truly personal, and people move through online and offline seamlessly. We'll explore how and why our apps should do the same, using Hood.ie and offline-first principles to do it in record time.",
+        "bio": "",
+        "links": [],
+        "slides": false,
+        "audio": "http://media.ffconf.org/2014/2-caolan.mp3",
+        "video": "https://www.youtube.com/watch?v=-x3Q61dBAwk&index=2&list=PLXmT1r4krsTqrwW2jjXIXuCtFQ-5BIn-s"
+      },
+      {
+        "break": true,
+        "title": "Coffee break (30 mins)",
+        "duration": 30
+      },
+      {
+        "duration": 40,
+        "title": "Navigating Open Source",
+        "speaker": {
+          "name": "Hannah Wolfe",
+          "twitter": "ErisDS",
+          "photo": "hannah.jpg"
+        },
+        "description": "Distributed, Non-Profit, Sustainable and Open Source: Ghost does nothing the easy way. Discover why the project made these choices and how they're creating a community and shipping code in the open.",
+        "bio": "",
+        "links": [],
+        "slides": "https://speakerdeck.com/erisds/navigating-open-source",
+        "audio": "http://media.ffconf.org/2014/3-hannah.mp3",
+        "video": "https://www.youtube.com/watch?v=o3HBe8WhzvE&index=3&list=PLXmT1r4krsTqrwW2jjXIXuCtFQ-5BIn-s"
+      },
+      {
+        "duration": 40,
+        "title": "Self-hosted JS",
+        "speaker": {
+          "name": "Andy Wingo",
+          "twitter": "andywingo",
+          "photo": "andy.jpg"
+        },
+        "description": "The parts of V8 and SpiderMonkey that are actually written in JS.  Let's implement an ES.next feature in JS, during the talk!",
+        "bio": "",
+        "links": [],
+        "slides": "https://wingolog.org/pub/ffconf-2014-slides.pdf",
+        "audio": "http://media.ffconf.org/2014/4-andy.mp3",
+        "video": "https://www.youtube.com/watch?v=YFFvNQWf3Iw&index=4&list=PLXmT1r4krsTqrwW2jjXIXuCtFQ-5BIn-s"
+      },
+      {
+        "break": true,
+        "duration": 90,
+        "title": "Lunch break (90 mins)"
+      },
+      {
+        "duration": 40,
+        "title": "Lean Mean CSS Machine",
+        "speaker": {
+          "name": "Tobias Ahlin",
+          "twitter": "tobiasahlin",
+          "photo": "tobi.jpg"
+        },
+        "description": "A day shouldn’t go by without you removing something. Design techniques and front-end optimization comes together in a behind-the-scenes look at what tools and techniques GitHub uses to make sure things render fast, with as little code as possible, and consistently.",
+        "bio": "",
+        "links": [],
+        "slides": false,
+        "audio": "http://media.ffconf.org/2014/5-tobias.mp3",
+        "video": "https://www.youtube.com/watch?v=0uhlFCQkml4&index=5&list=PLXmT1r4krsTqrwW2jjXIXuCtFQ-5BIn-s"
+      },
+
+      {
+        "duration": 40,
+        "title": "A Single Page Story",
+        "speaker": {
+          "name": "Henrik Joreteg",
+          "twitter": "HenrikJoreteg",
+          "photo": "henrik.jpg"
+        },
+        "description": "Single page apps have become a legitimate part of the web, but what role should they play? Where do they shine? Where do they fail? How should we think about them and how can we evaluate tools for building them? We will opine on the tradeoffs of abstractions and frameworks and share &yet's impetus for creating Ampersand.js.",
+        "bio": "",
+        "links": [],
+        "slides": "https://speakerdeck.com/henrikjoreteg/ffconf-dot-org",
+        "audio": "http://media.ffconf.org/2014/6-henrick.mp3",
+        "video": "https://www.youtube.com/watch?v=hrAssE8meRo&index=6&list=PLXmT1r4krsTqrwW2jjXIXuCtFQ-5BIn-s"
+      },
+
+      {
+        "break": true,
+        "duration": 30,
+        "title": "Cake break (30 mins)"
+      },
+
+      {
+        "duration": 40,
+        "title": "Tools for the 21st century musician",
+        "speaker": {
+          "name": "Soledad Penadés",
+          "twitter": "supersole",
+          "photo": "sole.jpg"
+        },
+        "description": "In this talk we'll learn how Web Audio works and how we can use it to design and play sounds with incredible accuracy, which enables us to create our own real-time instruments and interactive experiences. We'll also identify the ferocious gotchas that are waiting to bite you when you least expect them, and gain valuable Web Audio debugging skills using Firefox's developer tools. At the end of the talk you'll be all set in your path to become 21st century music pioneers—or at least have a ton of creative fun!",
+        "bio": "",
+        "links": ["http://soledadpenades.com/"],
+        "slides": "http://soledadpenades.com/files/t/20141107_ffconf/",
+        "audio": "http://media.ffconf.org/2014/7-soledad.mp3",
+        "video": "https://www.youtube.com/watch?v=F0Iwvp_wtHE&index=7&list=PLXmT1r4krsTqrwW2jjXIXuCtFQ-5BIn-s"
+      },
+            {
+        "duration": 40,
+        "title": "Getting Close with the Web",
+        "speaker": {
+          "name": "Ben Foxall",
+          "twitter": "benjaminbenben",
+          "photo": "ben.jpg"
+        },
+        "description": "The web platform allows us to interact with people on the other side of the planet, but in what other ways can we use it when our devices are right next to each other?",
+        "bio": "",
+        "links": [],
+        "slides": false,
+        "audio": "http://media.ffconf.org/2014/8-ben.mp3",
+        "video": "https://www.youtube.com/watch?v=NdeJYeFvHnM&index=8&list=PLXmT1r4krsTqrwW2jjXIXuCtFQ-5BIn-s"
+      },
+
+      {
+        "break": true,
+        "duration": 20,
+        "title": "Closing remarks"
+      },
+      {
+        "break": true,
+        "start": "18:15",
+        "end": "Late",
+        "duration": 90,
+        "afterparty": true,
+        "title": "After Party"
+      }
+    ]
+  },
+  "workshops": [
+    {
+      "title": "Debug, and Know Thy Tools",
+      "slug": "debug-and-tools",
+      "ticket": {
+        "url": "https://leftlogic.stagehq.com/events/3026/booking/new",
+        "price": "425"
+      },
+
+      "details": {
+        "date": "5th Nov 2015",
+        "time": "09:00 — 17:00",
+        "venue": "The Lighthouse, Brighton"
+      },
+
+      "speaker": {
+        "name": "Remy Sharp",
+        "twitter": "rem",
+        "photo": "remy-devtools.jpg"
+      },
+
+      "topics" : [
+        {
+          "title": "Console",
+          "description": "Power features beyond console.log"
+        },
+        {
+          "title": "Network",
+          "description": "What's slow, why and the detail behind a request"
+        },
+        {
+          "title": "Source",
+          "description": "How to make DevTools your development IDE"
+        },
+        {
+          "title": "Performance",
+          "description": "How to read and investigate rendering issues"
+        },
+        {
+          "title": "Mobile",
+          "description": "Using the tools you know to debug tiny machines"
+        }
+      ],
+      "description": "Sure, you've moved past `alert` debugging and discovered console.log, but did you know you can replay XHR requests instead of having to repeat your steps to make the request? Or that you can proxy your local server through a browser configuration so your mobile phone can see it? This workshop is dedicated to learning the native developer tools baked in to the browser to make our life a little more bearable.",
+      "extendedDescription": "We will look at features of Chrome DevTools, what's available in Firefox debugging suite. We'll also look at remote mobile debugging using native tools and also look at the alternative tools where native support isn't available.\n\nThe workshop will mostly be about the foundation of debugging techniques, which apply way beyond just a single browser's debugger tool, but will raise your expectation of all web debugging environments."
+    },
+
+    {
+      "title": "Testing for Front End Ops",
+      "slug": "testing",
+      "ticket": {
+        "url": "https://leftlogic.stagehq.com/events/3032/booking/new",
+        "price": "425"
+      },
+
+      "details": {
+        "date": "5th Nov 2015",
+        "time": "09:00 — 17:00",
+        "venue": "The Lighthouse, Brighton"
+      },
+
+      "speaker": {
+        "name": "Brian LeRoux",
+        "twitter": "brianleroux",
+        "photo": "remy-devtools.jpg"
+      },
+
+      "topics" : [
+        {
+          "title": "Concepts",
+          "description": "Truthiness, performance, coverage & continuous integration"
+        },
+        {
+          "title": "API First! Testing HTTP Endpoints",
+          "description": "Local builds, TAP & Tape, Mocha & Chai"
+        },
+        {
+          "title": "Testing Front End JavaScript",
+          "description": "Browserify, ES6 modules, Browsers, Mobile devices and emulators"
+        },
+        {
+          "title": "Testing CSS and HTML",
+          "description": "Removing unused CSS, telemetry: load, paint, fps & automation"
+        },
+        {
+          "title": "Comprehensive",
+          "description": "Reporting, remote debugging, monitoring, security & integrity"
+        }
+      ],
+      "description": "Testing does not guarantee high quality software, however, it improves the chances in creating it. Testing verifies your software continues to work after a quick hack and gives you an easy escape hatch when it does not. Testing tells the world your code does the things you intend it to do building confidence in those whom will ultimately use it. Most importantly, testing builds your own confidence as you progress into your problem domain.",
+      "extendedDescription": "Professionally developed and maintained codebases have tests and run them continuously. Organizations adopting software rightfully expect a test suite and often will want to run it themselves too. Organizations implementing code traditionally siloed quality assurance from development and often let the former slip in preference to a looming, oft artificial, deadline. And those projects usually failed.\n\nSoftware earned a reputation for failure but this is no longer a necessary risk. With modern advancements in testing, continuous integration and practicing continuous delivery you can mitigate technical challenges in releasing, creating value for your organization, and ultimately turning that value into tangible revenue.  These practice have evolved the simple web developer into a dangerously powerful new superhuman role known as Front End Ops.\n\nMitigating downtime due to a JavaScript error is the quiet achievement of Front End Ops but there is a more compelling story. You can measure the value you are creating and you can adjust the targets to improve it. A simple performance test that catches a regression in page load. Page load very often translates directly to revenue. Discovering an optimization that will translate to direct revenue earnings is a very convincing bullet point when asking for your next raise."
+    }
+  ]
+}
