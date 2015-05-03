@@ -21,14 +21,12 @@ html(id=id)
 
     if environment == "production"
       script.
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', '#{analytics}']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
-        })();
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','#{analytics}','auto');ga('send','pageview');
 
     script.
       var confDay = new Date('#{date}');
