@@ -1,8 +1,11 @@
 {
   "globals": {
     "siteTitle": "ffconf :: JavaScript Conference :: 6th November 2015",
+    "siteDescription": "ffconf 2015 is a one day JavaScript Conference at the Duke of York’s Picturehouse in Brighton, UK on the 6th November 2015",
     "date": "2015-11-06",
     "analytics": "UA-1656750-37",
+    "id": "ffconf-2015",
+    "source": "https://github.com/leftlogic/ffconf2015",
     "config": {
       "phase": 4,
       "soldout": {

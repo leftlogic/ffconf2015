@@ -1,0 +1,53 @@
+.cern {
+  fill: $c-green;
+  font-family: cern, monospace;
+  font-size: 50px; /* 24 */
+  filter: url(/#glow);
+  text-anchor: middle;
+  text-transform: uppercase;
+}
+.date {
+  dominant-baseline: hanging;
+  font-size: 22px; /* 13 */
+  text-anchor: start;
+}
+.screen-time {
+  text-anchor: end;
+}
+.button {
+  stroke: $c-green;
+  filter: url(/#glow);
+  fill-opacity: 0;
+}
+.anchor:hover .button {
+  fill: $c-green;
+  fill-opacity: 1;
+}
+.anchor:hover .link {
+  fill: $c-black;
+  filter: none;
+}
+#stripe,
+#stripe2 {
+  fill: $c-black;
+}
+#ff14_logo {
+  fill-rule: evenodd;
+}
+#ff14_logo_shape_bg {
+  filter: url(/#glow);
+  fill: $c-green;
+}
+#ff14_logo_ff {
+  stroke: $c-black;
+  fill: $c-black;
+}
+#ff14_logo_shape_pattern {
+  fill: url(/#stripe);
+  filter: url(/#glow);
+}
+@media (max-width: 600px) {
+  #ff14_logo_shape_pattern {
+    fill: url(/#stripe2);
+  }
+}

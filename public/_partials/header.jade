@@ -1,0 +1,107 @@
+- var menu = ['sessions', 'workshops', 'locations', 'sponsors']
+- var text = {}
+- text.location = 'Brighton UK.'
+- text.date = '6 November 2015'
+- text.datetime = '2015-11-06T09:00'
+- text.binary1 = '111 1011 11111011110'
+- text.binary2 = '1110000100 - 11100001000'
+
+- var line = 'Tickets will be sold on \n9-July and 16-July at 11am.'
+- var button = ''
+- var buy = true
+- var on = false
+- var size = 40
+- var buttonLink = false
+
+if config.phase == 1
+  if config.soldout.conference
+    if config.soldout.workshops
+      - line = 'Tickets for this phase sold out.\nMore go on sale 16th July.'
+      - button = 'Sold Out'
+      - buy = false
+    else
+      - line = 'Last few tickets for this batch.\nMore go on sale 16 July.'
+      - button = 'Buy Tickets'
+      - buy = true
+      - on = true
+  else
+    - line = 'Tickets available to buy.\nMore go on sale at 11am.'
+    - button = 'Buy Tickets £160 <abbr title="plus Value Added Tax">+ VAT</abbr>'
+    - buy = true
+    - on = true
+    - size = 86
+if config.phase >= 2 && config.phase < 4
+  if config.soldout.conference
+    if config.soldout.workshops
+      - line = 'All tickets for this years\'\nconference have been sold.'
+      - button = 'Sold Out'
+      - buy = false
+    else
+      - line = 'Tickets available to buy.\nLast few remaining.'
+      - button = 'Buy Tickets'
+      - buy = true
+      - on = true
+  else
+    - line = 'Tickets available to buy.\nLast batch.'
+    - button = 'Buy Tickets £160 <abbr title="plus Value Added Tax">+ VAT</abbr>'
+    - buy = true
+    - on = true
+    - size = 86
+if config.phase == 4
+    - line = ''
+    - buttonLink = 'https://www.youtube.com/playlist?list=PLXmT1r4krsTqrwW2jjXIXuCtFQ-5BIn-s'
+    - button = 'Watch Now'
+    - buy = false
+    - on = true
+
+- line = line.split('\n')
+
+
+header.masthead(role='banner')
+  div.screen-gradient
+    if config.phase >= 1
+      nav.nav-main(role='navigation')
+        each item in menu
+          a(href='#' + item)=capitalize(item)
+          = "\n"
+      //- p#show-menu Pull down for navigation...
+
+    div#screen.screen-wrapper
+      div#monitor.screen
+        //- non svg version
+        div.screen-svg-alternate
+          div.screen-date
+            time.screen-day(datetime=text.datetime)= text.binary1
+            time.screen-time(datetime=text.datetime)= text.binary2
+
+          h1.logo(role='heading', aria-level='1')
+            span Full Frontal 2015
+
+          div.details-tickets-wrapper
+
+            div.details-wrapper
+              time.dtstart(title=text.datetime, datetime=text.datetime)= text.date
+              = "\n"
+              span.
+              span.location= text.location
+
+            div.tickets-wrapper
+              p.tickets-lines
+                span.tickets-line= line[0]
+                = "\n"
+                span.tickets-line= line[1]
+                = "\n"
+              if button != ''
+                if buy
+                  a.screen-button(href='http://leftlogic.stagehq.com', target='_blank')!= button
+                else
+                  span.screen-button= button
+      div.screen-shadow
+
+  div.machine#machine
+    div.case
+      div.mother
+      div.case-button-wrapper
+        div.case-light(class=on?'case-light-on':null)
+        div.case-button(class=on?'case-button-on':null)
+    div#vents.vents(class=on?'vents-on':null)

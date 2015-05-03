@@ -1,0 +1,143 @@
+- var time = new Date(public._data.sessions.startTime)
+!= partial('/js/_idify')
+
+hr.main-hr
+section.main(class='session-style-' + config.mode, role='region', aria-labelledby='sessions')
+  h2#sessions.section-title.icon-microphone(role='heading', aria-level='2') Sessions
+  if config.phase < 4
+    div.button-wrapper
+      if config.phase >= 1
+        if config.soldout.conference
+          span.button.button-disabled Sold Out
+        else
+          a.button(href='https://leftlogic.stagehq.com/', target='_blank') Tickets £160
+            small + VAT
+      else
+        span.button.button-disabled Tickets £160
+          small + VAT
+  ol.sessions-wrapper
+    - var totalSessions = 0;
+    if config.phase < 3
+      //
+        |  
+        |  
+        |  
+        |  
+        |  
+        |  Hi there.
+        |  
+        |  So, you might be looking for the speakers for this wonderful event. Good for you!
+        |  
+        |  However, as with previous years of ffconf, we will only annouce the sessions (that have been confirmed)
+        |  whilst we're selling tickets, because, well, you're attending for the amazing content, not just the
+        |  pretty faces we'll have lined up, eh?
+        |  
+        |  That's not to dismiss how amazing our speakers are - they truly are, but you'll have to wait until *after*
+        |  we've sold all our tickets to find out exactly who they are.
+        |  
+        |  Good luck!
+        |  
+        |  See you in November I hope!
+        |  
+        |  – Remy
+        |  
+        |  
+        |  
+        |  Also, this:
+        |  
+        |  
+        |  
+        |                        \_            /;              _.._
+        |                        `\~--.._     //'            ,(+=\\\\
+        |                         `//////\  \\/;'             /~ (\\\\
+        |                           ~/////\~\`)'             /;   ))))
+        |                               `~'  |              ((`~/((((\
+        |                               ;'_\'\             /'))   )))))
+        |                              /~/ '" "'     _.  /'/\_ /^\`((( \
+        |                             `\/'       _.-~/--/ (  =(   | ,  |
+        |                                     _/~\_)_}___/^\/~`\.__\|==|
+        |                                    /uUUU)        )        |  |
+        |                                   (   / |      _-=o|\__ /'/~ \
+        |                                   ' /'  |     /(((((\`\(  |~\/
+        |                                   /'    |   /' )))))"`\`\|/_/---.._,$$,
+        |                             .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+        |                          ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+        |                        ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+        |                      ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+        |                    s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+        |                  _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+        |                /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+        |             (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+        |              (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+        |              `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+        |              (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+        |             ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+        |             /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+        |            /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+        |          ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+        |        ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+        |       S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+        |      (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+        |                          (/-(/-(/-(/-(/-'
+        |  
+        |  
+        |  
+        |  
+        |  
+    each session, index in public._data.sessions.sessions
+      - if (!session.start) {
+      -   session.start = pad(time.getHours()) + ':' + pad(time.getMinutes())
+      - }
+      - time.setMinutes(time.getMinutes() + session.duration)
+      - if (!session.end) {
+      -   session.end = pad(time.getHours()) + ':' + pad(time.getMinutes())
+      - }
+      - if (!session.break) totalSessions++;
+
+      if (session.break && config.phase == 3) || !session.break
+        li.session-wrapper.sub-hr.js-session(id=idify(session.title), data-date=date + ' ' + session.start)
+          if session.break
+              header.break
+                h3.schedule-title(role='heading', aria-level='3')= session.title
+                div.session-time
+                  =session.start + ' '
+                  &mdash;
+                  =' ' + session.end
+          else
+            if config.phase >= 3 && session.speaker.photo
+              div.session-speaker-img-wrapper
+                div.session-speaker-img(style='background-image:url(/images/speakers/' + session.speaker.photo + ')')
+                  img(src='/images/speakers/' + session.speaker.photo, alt=session.speaker.alt?session.speaker.alt:'Picture of ' + session.speaker.name)
+            div.session-about-wrapper
+              header.session-header
+                h3.session-title(role='heading', aria-level='3')= session.title
+                if config.phase >= 3 && session.speaker.name
+                  div.session-speaker-name
+                    if session.speaker.twitter
+                      a(target='_blank', href='https://twitter.com/' + session.speaker.twitter)= session.speaker.name
+                    else
+                      span= session.speaker.name
+                if config.phase == 3
+                  div.session-time.session-speaker-time
+                    =session.start + ' '
+                    &mdash;
+                    =' ' + session.end
+              div.session-content
+                if session.description
+                  !=global.marked(session.description)
+                if config.phase >= 3 && session.bio
+                  div.session-bio
+                    !=global.marked(session.bio)
+                if config.phase == 4
+                  if session.slides || session.audio || session.video
+                    div.session-links
+                      if session.slides
+                        a.icon-document-text(href=session.slides) Slides
+                      if session.audio
+                        a.icon-notes(href=session.audio) Audio
+                      if session.video
+                        a.icon-video(href=session.video) Video
+
+    if totalSessions < 8
+      li.session-wrapper.sub-hr.js-session(id='slugMoreToCome')
+        h3.more-sessions More sessions to be announced soon.

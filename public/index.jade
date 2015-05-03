@@ -1,0 +1,65 @@
+doctype
+html(id=id)
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content=siteDescription)
+    meta(name='format-detection', content='telephone=no')
+
+    title= siteTitle
+
+    link(rel='icon', href='/favicon.png')
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='all-the-source', href=source)
+    link(rel='author', href='/humans.txt')
+
+    <!--[if lt IE 9]>
+    script(src='/js/html5shiv.min.js')
+    link(rel='stylesheet', href='/css/ltie9.css')
+    <![endif]-->
+
+    if environment == "production"
+      script.
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', '#{analytics}']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+        })();
+
+    script.
+      var confDay = new Date('#{date}');
+      // SVG support
+      function supportsSVG() {
+        return !! document.createElementNS && !! document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect;
+      }
+      if (!supportsSVG()) {
+        document.documentElement.className += ' no-svg';
+      }
+
+  body
+
+    include js/formatting
+    include js/markdown
+
+    include _partials/header
+
+    if config.phase >= 0.5
+      include _partials/sessions
+
+    if config.phase >= 0.5
+      include _partials/workshops
+
+    if config.phase >= 0.5
+      include _partials/locations
+
+    include _partials/sponsors
+
+    include _partials/footer
+
+    <!--[if gt IE 8]><!-->
+    script(src='/js/script.js')
+    <!--<![endif]-->
