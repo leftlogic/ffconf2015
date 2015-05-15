@@ -28,6 +28,7 @@ section.main(role='region', aria-labelledby='workshops')
         if workshop.topics
           ul.workshop-list
             each topic in workshop.topics
-              li=topic.title
+              li
+                h4(role='heading', aria-level='4')=topic.title
                 if topic.description
-                  span.description=': ' + topic.description
+                  =topic.description

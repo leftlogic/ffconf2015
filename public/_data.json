@@ -57,7 +57,7 @@
       ]
     },
     {
-      "type": "Food & Drink",
+      "type": "Food/Drink",
       "icon": "beer",
       "location": [
         {"name": "Bardsley's", "detail": "fish 'n chips", "url": "http://www.bardsleys-fishandchips.co.uk/map"},

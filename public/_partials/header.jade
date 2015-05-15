@@ -4,7 +4,7 @@
 - text.date = completeDate.format('D MMMM YYYY')
 - text.datetime = completeDate.format('YYYY-MM-DDTHH:mm')
 
-- var line = 'Tickets will be sold on \n9-July and 16-July at 11am.'
+- var line = 'Tickets will be sold on \nthe 9th and 16th July at 11am.'
 - var button = ''
 - var buy = true
 - var on = false
@@ -18,7 +18,7 @@ if config.phase == 1
       - button = 'Sold Out'
       - buy = false
     else
-      - line = 'Last few tickets for this batch.\nMore go on sale 16 July.'
+      - line = 'Last few tickets for this batch.\nMore go on sale 16th July.'
       - button = 'Buy Tickets'
       - buy = true
       - on = true
