@@ -1,4 +1,4 @@
-- var time = new Date(date + ' ' + startTime)
+- var sessionTime = completeDate.clone()
 != partial('/js/_idify')
 
 hr.main-hr
@@ -22,11 +22,11 @@ section.main(class='session-style-' + config.mode, role='region', aria-labelledb
         include wot
     each session, index in public._data.sessions.sessions
       - if (!session.start) {
-      -   session.start = pad(time.getHours()) + ':' + pad(time.getMinutes())
+      -   session.start = sessionTime.format('HH:mm')
       - }
-      - time.setMinutes(time.getMinutes() + session.duration)
+      - sessionTime.add(session.duration, 'minutes')
       - if (!session.end) {
-      -   session.end = pad(time.getHours()) + ':' + pad(time.getMinutes())
+      -   session.end = sessionTime.format('HH:mm')
       - }
       - if (!session.break) totalSessions++;
 
