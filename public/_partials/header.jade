@@ -56,13 +56,12 @@ if config.phase == 4
 
 
 header.masthead(role='banner')
-  div.screen-gradient
+  div
     if config.phase >= 1
       nav.nav-main(role='navigation')
         each item in menu
           a(href='#' + item)=capitalize(item)
           = "\n"
-      //- p#show-menu Pull down for navigation...
 
     div#screen.screen-wrapper
       div#monitor.screen
