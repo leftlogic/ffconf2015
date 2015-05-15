@@ -8,6 +8,7 @@
     }
   };
 
+  var skipNav = false; // if we want to scroll down without showing the menu
   var $nav = $('.nav-main');
   var today = new Date();
   var best = null;
@@ -33,7 +34,7 @@
     setTimeout(function () {
       best.scrollIntoView(true);
     }, 750);
-  } else {
+  } else if (skipNav) {
     // only scroll the front page
     // && /mobi/i.test(navigator.userAgent)
     $nav.length > 0 && location.pathname === '/' && !location.hash && setTimeout(function () {
