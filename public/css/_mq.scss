@@ -145,19 +145,6 @@
     display: block;
   }
 
-  .main-hr {
-    background-size: 100% 20px;
-    height: 60px;
-    margin-bottom: 36px;
-
-    &:before, &:after {
-      height: 20px;
-    }
-
-    &:before {
-      margin-top: 19px;
-    }
-  }
   .sub-hr {
     &:before {
       margin-bottom: 14px; // 20px

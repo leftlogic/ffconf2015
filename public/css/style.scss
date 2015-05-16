@@ -210,27 +210,6 @@ p {
 
 /* Sections
    ========================================================================== */
-.main-hr {
-  &, &:before, &:after {
-    content: "";
-    border: 0 none;
-    border-top: 1px solid rgba(#ded9d6, .5);
-    display: block;
-    height: 10px;
-    margin: 0;
-    background: #ededeb;
-    background: -webkit-linear-gradient(bottom, #ededeb 0%, #fbfbf9 100%);
-    background:   linear-gradient(to top, #ededeb 0%, #fbfbf9 100%);
-  }
-  & {
-    background-size: 100% 10px;
-    height: 30px;
-    margin-bottom: 22px;
-  }
-  &:before {
-    margin-top: 9px;
-  }
-}
 .sub-hr {
   &:before {
     border-bottom: 1px solid #e9e6e5;
