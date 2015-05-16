@@ -2,7 +2,7 @@ section.main(role='region', aria-labelledby='locations')
   ul.locations#locations
     each locations in public._data.locations
       li
-        h2.section-title(role='heading', aria-level='2' class='icon-' + locations.icon)=locations.type
+        h2.section-title(role='heading', aria-level='2')=locations.type
         ul.sub-hr
           each location in locations.location
             li.vcard.location

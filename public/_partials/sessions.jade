@@ -2,7 +2,7 @@
 != partial('/js/_idify')
 
 section.main(class='session-style-' + config.mode, role='region', aria-labelledby='sessions')
-  h2#sessions.section-title.icon-microphone(role='heading', aria-level='2') Sessions
+  h2#sessions.section-title(role='heading', aria-level='2') Sessions
   //- if config.phase < 4
   //-   div.button-wrapper
   //-     if config.phase >= 1
@@ -67,11 +67,11 @@ section.main(class='session-style-' + config.mode, role='region', aria-labelledb
                   if session.slides || session.audio || session.video
                     div.session-links
                       if session.slides
-                        a.icon-document-text(href=session.slides) Slides
+                        a(href=session.slides) Slides
                       if session.audio
-                        a.icon-notes(href=session.audio) Audio
+                        a(href=session.audio) Audio
                       if session.video
-                        a.icon-video(href=session.video) Video
+                        a(href=session.video) Video
 
     if totalSessions < 8
       li.session-wrapper.sub-hr.js-session(id='slugMoreToCome')

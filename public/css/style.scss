@@ -38,13 +38,6 @@ p {
   margin: 0 0 30px;
   padding-top: 22px;
   text-transform: uppercase;
-
-  &[class^="icon-"]:before,
-  &[class*=" icon-"]:before {
-    margin-right: 0.25em;
-    position: relative;
-    top: 3px;
-  }
 }
 .schedule-title,
 .sponsor-title {

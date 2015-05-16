@@ -1,6 +1,6 @@
 section.main(role='region', aria-labelledby='workshops')
   each workshop, index in public._data.workshops
-    h2.section-title.icon-spanner(role='heading', aria-level='2', id=index==0?'workshops':null) Workshop #{index+1}
+    h2.section-title(role='heading', aria-level='2', id=index==0?'workshops':null) Workshop #{index+1}
     //- if config.phase < 4
     //-   div.button-wrapper
     //-     if config.phase >= 1

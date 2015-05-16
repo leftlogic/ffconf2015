@@ -2,7 +2,6 @@
   "locations": [
     {
       "type": "Venues",
-      "icon": "location",
       "location": [
         {
           "name": "Duke of Yorks",
@@ -28,7 +27,6 @@
     },
     {
       "type": "Hotels",
-      "icon": "home",
       "location": [
         {
           "name": "Jury's Inn",
@@ -58,7 +56,6 @@
     },
     {
       "type": "Food/Drink",
-      "icon": "beer",
       "location": [
         {"name": "Bardsley's", "detail": "fish 'n chips", "url": "http://www.bardsleys-fishandchips.co.uk/map"},
         {"name": "The Open House", "detail": "good pub food", "url": "http://goo.gl/maps/eZPV8"},
