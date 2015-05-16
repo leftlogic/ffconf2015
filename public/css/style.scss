@@ -242,48 +242,6 @@ p {
   }
 }
 
-.button {
-  &, &:link, &:visited, &:hover, &:focus, &:active {
-    border: 1px solid $c-orange;
-    border-radius: 5px;
-    box-shadow: inset -2px -2px 0 rgba($c-orange, .25);
-    display: block;
-    font-size: 24px;
-    // font-weight: bold;
-    line-height: 2;
-    padding: 1px 22px;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  &:hover, &:focus, &:active {
-    background: $c-white;
-    border-color: $c-grey-dark;
-    box-shadow: inset -2px -2px 0 rgba(#c7c7c7, .25);
-    color: $c-grey-dark;
-  }
-}
-.button-disabled {
-  &, &:link, &:visited, &:hover, &:focus, &:active {
-    border-color: $c-orange-light;
-    background: rgba($c-orange, .1);
-    box-shadow: inset -2px -2px 0 rgba($c-orange-light, .25);
-    color: $c-orange-light;
-  }
-}
-.button-wrapper {
-  margin-bottom: 30px;
-  position: relative;
-}
-.button-sub {
-  bottom: 100%;
-  font-size: 12px;
-  font-weight: normal;
-  padding-bottom: 7px;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-}
-
 .sessions-wrapper {
   clear: both;
   list-style: none;

@@ -4,17 +4,17 @@
 hr.main-hr
 section.main(class='session-style-' + config.mode, role='region', aria-labelledby='sessions')
   h2#sessions.section-title.icon-microphone(role='heading', aria-level='2') Sessions
-  if config.phase < 4
-    div.button-wrapper
-      if config.phase >= 1
-        if config.soldout.conference
-          span.button.button-disabled Sold Out
-        else
-          a.button(href=ticketUrl, target='_blank') Tickets £#{ticketPrice}
-            small  + VAT
-      else
-        span.button.button-disabled Tickets £#{ticketPrice}
-          small  + VAT
+  //- if config.phase < 4
+  //-   div.button-wrapper
+  //-     if config.phase >= 1
+  //-       if config.soldout.conference
+  //-         span.button.button-disabled Sold Out
+  //-       else
+  //-         a.button(href=ticketUrl, target='_blank') Tickets £#{ticketPrice}
+  //-           small  + VAT
+  //-     else
+  //-       span.button.button-disabled Tickets £#{ticketPrice}
+  //-         small  + VAT
   ol.sessions-wrapper
     - var totalSessions = 0;
     if config.phase < 3

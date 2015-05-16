@@ -2,9 +2,9 @@ hr.main-hr
 section.main.main-sponsors(role='region', aria-labelledby='sponsors')
   h2#sponsors.section-title.icon-thumbs-up(role='heading', aria-level='2') Sponsors
 
-  if config.sponsorsAvailable
-    div.button-wrapper
-      a.button(href='/sponsorship.html') Become a sponsor
+  //- if config.sponsorsAvailable
+  //-   div.button-wrapper
+  //-     a.button(href='/sponsorship.html') Become a sponsor
 
   each cat, key in public._data.sponsors
     if cat.length
