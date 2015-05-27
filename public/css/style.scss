@@ -9,10 +9,9 @@ $old-ie: false;
   @include box-sizing(border-box);
 }
 body {
-  font-family: 'Proxima Nova', 'Open Sans', Arial, sans-serif;
-  font-size: 17px; // 28px
-  font-weight: 500;
-  line-height: 1.4;
+  background: $c-black;
+  color: $c-text-normal;
+  font: 16px/1.75 monospace;
   margin: 0;
   padding: 0;
 }
@@ -23,6 +22,7 @@ a {
   text-decoration: none;
 
   &:link, &:visited {
+    color: $c-yellow;
   }
   &:hover, &:focus, &:active {
   }
@@ -31,41 +31,36 @@ p {
   margin: 0;
   padding: 0;
 }
+h2, h3 {
+  color: $c-white;
+  text-transform: uppercase;
+}
 .section-title {
-  font-size: 34px;
-  font-weight: bold;
+  font-size: 30px;
   line-height: 1;
   margin: 0 0 30px;
   padding-top: 22px;
-  text-transform: uppercase;
+  text-align: center;
 }
-.schedule-title,
 .sponsor-title {
-  font-size: inherit;
-  font-weight: bold;
+  font-size: 60px;
   margin: 0;
 }
-.session-title,
-.workshop-title {
-  font-size: 24px; // 34px
-  font-weight: 500;
-  margin: 0 0 20px;
+.session-speaker-name,
+.session-links,
+.workshop-speaker-name,
+.workshop-time {
+  text-transform: uppercase;
 }
 .session-time,
 .workshop-time {
-  font-weight: bold;
-}
-.workshop-time {
-  line-height: 2;
+  color: $c-blue;
 }
 .session-content,
 .workshop-content,
 .blurb {
-  font-weight: normal;
-  line-height: 1.7;
 
   & > p {
-    font-weight: 500;
   }
 }
 .workshop-content-extended {
@@ -73,38 +68,20 @@ p {
 
   p {
     margin: 1em 0;
-    font-weight: 200;
   }
 }
 .workshop-list {
-  font-weight: bold;
-  line-height: 1.7;
   list-style: none;
   margin: 0;
   padding: 0 0 0 1.4em;
-
-  & li {
-    &:before {
-      content: '\2713';
-      padding-right: 0.9em;
-      margin-left: -1.4em;
-    }
-  }
-
-  & li span {
-    font-weight: 400;
-  }
 }
 .tbc {
 }
 .more-sessions {
-  font-size: 17px;
-  font-weight: normal;
   margin-top: 27px;
 }
 .codeofconduct {
-  font-size: 0.8em;
-  font-weight: normal;
+  font-size: 20px;
   margin-top: 2em;
   margin-bottom: 4em;
   max-width: 600px;
@@ -124,7 +101,6 @@ p {
 /* Header
    ========================================================================== */
 .masthead {
-  font-family: cern, monospace;
   text-align: center;
   text-transform: uppercase;
 
@@ -143,7 +119,6 @@ p {
   a {
     border-bottom: 0 none;
     display: block;
-    font-size: 32px;
     padding-bottom: 5px;
 
     &:hover, &:focus, &:active {
@@ -169,7 +144,6 @@ p {
   }
 }
 .details-tickets-wrapper {
-  font-size: 24px;
 }
 .tickets-wrapper {
   &:before {
@@ -188,11 +162,9 @@ p {
    ========================================================================== */
 .sub-hr {
   &:before {
-    border-bottom: 1px solid #e9e6e5;
-    border-top: 1px solid #e9e6e5;
+    border-top: 1px solid $c-grey-title;
     content: "";
     display: block;
-    height: 4px;
     margin-bottom: 15px; // 30px
   }
 }
@@ -248,7 +220,6 @@ p {
     line-height: 40px;
 
     &:before {
-      font-size: 1.2em;
       padding-bottom: 1px;
       padding-right: 0.25em;
       vertical-align: bottom;
@@ -312,7 +283,7 @@ p {
   text-align: center;
 }
 .blurb {
-  font-size: 15px;
+  font-size: 20px;
   margin-bottom: 20px;
   margin-top: 20px;
 }

@@ -17,7 +17,7 @@ section.main(role='region', aria-labelledby='workshops')
       header
         h3.workshop-title(role='heading', aria-level='3')!=global.marked(workshop.title)
         div
-          a(target='_blank' href='https://twitter.com/#{workshop.speaker.twitter}')= workshop.speaker.name
+          a.workshop-speaker-name(target='_blank' href='https://twitter.com/#{workshop.speaker.twitter}')= workshop.speaker.name
           div.workshop-time= workshop.details.date + ', ' +  workshop.details.time
       div.workshop-content-wrapper
         div.workshop-content
