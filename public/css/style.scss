@@ -6,6 +6,7 @@ $old-ie: false;
 @import "mixin";
 
 @include font-face('OCR-A', "../fonts/ocr-a/OCRAExtended", normal);
+@include font-face('Steelfish', "../fonts/steelfish/Steelfish", normal);
 
 *, *:after, *:before {
   @include box-sizing(border-box);
@@ -82,7 +83,11 @@ h2, h3 {
 .more-sessions {
   margin-top: 27px;
 }
-.codeofconduct {
+.main-sponsors,
+.footer {
+  font-family: Steelfish, Verdana;
+}
+.footer {
   font-size: 20px;
   margin-top: 2em;
   margin-bottom: 4em;
