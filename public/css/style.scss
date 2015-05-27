@@ -5,13 +5,15 @@ $old-ie: false;
 @import "var";
 @import "mixin";
 
+@include font-face('OCR-A', "../fonts/ocr-a/OCRAExtended", normal);
+
 *, *:after, *:before {
   @include box-sizing(border-box);
 }
 body {
   background: $c-black;
   color: $c-text-normal;
-  font: 16px/1.75 monospace;
+  font: 16px/1.75 'OCR-A', monospace;
   margin: 0;
   padding: 0;
 }
