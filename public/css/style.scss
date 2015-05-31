@@ -47,17 +47,25 @@ h2, h3 {
 .section-title {
   font-size: 32px;
   line-height: 1;
-  margin: 0 0 30px;
+  margin: 0 0 90px;
   padding-top: 22px;
   text-align: center;
+
+  .main-sponsors & {
+    font-size: 60px;
+    letter-spacing: 4px;
+    margin-top: 52px;
+  }
 }
 .sponsor-title {
   color: $c-grey-title;
   font-size: 30px;
-  margin: 0;
+  letter-spacing: 4px;
+  line-height: 1;
+  margin: 10px 0 30px;
 }
 .dtstart,
-.location,
+.dtlocation,
 .session-time,
 .workshop-time,
 .workshop-list h4,
@@ -153,7 +161,7 @@ h2, h3 {
   }
 }
 .dtstart,
-.location {
+.dtlocation {
   display: block;
   margin: 20px 0;
 }
@@ -266,16 +274,26 @@ h2, h3 {
 .sponsor {
   background: $c-white;
   border-radius: 5px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  height: 50vw;
+  margin: 20px auto;
   width: 100%; // this is for IE
 
   a {
-    display: block;
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    height: 100%;
+    padding: 20px;
+    width: 100%;
   }
 
   img {
     border: 0 none; // IE fix
+    display: block;
+    max-height: 100%;
     max-width: 100%;
   }
 }
