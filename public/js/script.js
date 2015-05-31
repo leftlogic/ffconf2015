@@ -42,3 +42,13 @@
     }, 750);
   }
 })();
+
+// X-Wing
+(function() {
+  $(document).on('ready', function() {
+    var $buttonA = $('.buttonA');
+    $buttonA.on('click', function() {
+      this.classList.toggle('buttonArotate');
+    });
+  });
+})();
