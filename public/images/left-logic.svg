@@ -24,22 +24,12 @@ svg:hover #logic {
 svg:hover #rectangle_shade {
   fill: #F24D00;
 }
-svg:hover #rectangle {
-  filter: url(#filter-over);
+svg:hover #rectangle_border {
+  fill: #FFF;
+  stroke: #FFF;
+  stroke-width: 2%;
 }
 </style>
-<defs>
-  <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-over">
-    <feMorphology radius="1" in="SourceAlpha" operator="dilate" result="shadowSpreadOuter1"></feMorphology>
-    <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
-    <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-    <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1   0 0 0 0 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
-    <feMerge>
-      <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
-      <feMergeNode in="SourceGraphic"></feMergeNode>
-    </feMerge>
-  </filter>
-</defs>
 <g id="leftlogic" transform="translate(1, 1)">
   <g id="symbol" shape-rendering="crispEdges">
     <g id="square">
@@ -47,6 +37,7 @@ svg:hover #rectangle {
       <rect id="square_small" x="3.5" y="4" width="7" height="7"/>
     </g>
     <g id="rectangle" transform="translate(15.75, 15.75)">
+      <polygon id="rectangle_border" points="0 0, 0 15, 15 30, 30 30, 30 15, 15 0" stroke-width="1.5"/>
       <rect x="-15" y="15" width="15" height="15" transform="skewX(45)"/>
       <rect id="rectangle_shade" x="15" y="-15" width="15" height="15" transform="skewY(45)"/>
       <rect id="rectangle_square_big" x="0" y="0" width="15" height="15"/>
