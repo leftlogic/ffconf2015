@@ -23,6 +23,9 @@
       }
     }
   }
+  .sponsor-full {
+    max-height: 180px;
+  }
   .sponsor-half {
     height: 120px;
     max-width: 190px;
@@ -33,6 +36,7 @@
   }
   #left-logic {
     height: 46px;
+    margin: 90px auto;
     width: 210px;
   }
   .left-logic {
@@ -42,19 +46,58 @@
 }
 
 
-@include mq-min-check(320px) {
-  .schedule-title {
+@include mq-min-check(640px) {
+  .masthead,
+  .main,
+  .footer {
+    padding: 30px;
+  }
+  .dtstart,
+  .dtlocation,
+  .nav-main {
+    font-size: 30px;
+  }
+  .section-title {
+    font-size: 60px;
+  }
+  .break {
+    @include clearfix;
+  }
+  .session-header {
+    @include clearfix;
+  }
+  .session-content {
+    display: table;
+    width: 100%
+  }
+  .session-links {
+    display: table-caption;
+    margin-top: -35px;
+    text-align: right;
+  }
+  .schedule-title,
+  .session-speaker-name {
+    // clear: left;
     float: left;
   }
-
-  .session-speaker-img {
-    float: left;
-    margin-bottom: 20px; // 40px
-  }
-
+  .session-time,
   .location-description {
     float: right;
   }
+  .locations ul {
+    margin-bottom: 20px;
+  }
+  .location {
+    margin-bottom: 0;
+  }
+}
+
+
+@include mq-min-check(768px) {
+  // .session-speaker-img {
+  //   float: left;
+  //   margin-bottom: 20px; // 40px
+  // }
 
   .sponsors-wrapper {
     font-size: 0;
@@ -78,13 +121,7 @@
 }
 
 
-@include mq-min-check(640px) {
-  .main,
-  .footer {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
+@include mq-min-check(768px) {
   .sponsor {
     margin-bottom: 0;
     margin-top: 0;
@@ -196,19 +233,6 @@
   .session-header {
     // float: left;
     margin-top: 17px;
-  }
-  .session-content {
-    display: table;
-    width: 100%
-  }
-  .session-links {
-    display: table-caption;
-    margin-top: -32px;
-    text-align: right;
-
-    a {
-      margin-left: 30px;
-    }
   }
 
   .workshop-time {

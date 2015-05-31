@@ -137,6 +137,7 @@ h2, h3 {
 }
 .logo-wrapper {
   margin: 24px auto 36px;
+  max-width: 280px;
   width: 58%;
   -webkit-transform: perspective(262px) rotateX(45deg);
           transform: perspective(262px) rotateX(45deg);
@@ -192,9 +193,7 @@ h2, h3 {
 
 /* Non Speaker Session
    ========================================================================== */
-.break {
-  // @include clearfix;
-}
+
 
 /* Speaker Session
    ========================================================================== */
@@ -213,10 +212,6 @@ h2, h3 {
 //     visibility: hidden;
 //   }
 // }
-.session-header {
-  // @include clearfix;
-  // margin-top: 24px;
-}
 .session-content {
   // clear: both;
   padding-top: 25px;
@@ -305,6 +300,10 @@ h2, h3 {
 .footer {
   padding-bottom: 30px;
   padding-top: 22px;
+}
+.blurb,
+.codeofconduct {
+  margin: 0 auto;
   max-width: 580px;
 }
 #left-logic {
