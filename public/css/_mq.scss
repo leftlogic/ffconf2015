@@ -94,119 +94,27 @@
 
 
 @include mq-min-check(768px) {
-  // .session-speaker-img {
-  //   float: left;
-  //   margin-bottom: 20px; // 40px
-  // }
-
-  .sponsors-wrapper {
-    font-size: 0;
-  }
-  .sponsor {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  .sponsor-half,
-  .sponsor-small {
-    margin-left: 20px;
-    width: calc((100% - 20px) / 2);
-
-    &:nth-child(odd) {
-      margin-left: 0;
-    }
-    &:first-child {
-      margin-left: 0;
-    }
-  }
-}
-
-
-@include mq-min-check(768px) {
-  .sponsor {
-    margin-bottom: 0;
-    margin-top: 0;
-    margin-left: 20px;
-    width: calc((100% - (20px * 3)) / 4);
-
-    &:nth-child(odd) {
-      margin-left: 20px;
-    }
-    &:first-child {
-      margin-left: 0;
-    }
-  }
-}
-
-
-@include mq-min-check(768px) {
-  .section-title {
-    font-size: 30px;
-    margin-bottom: 28px; // 36px
-    padding-top: 36px;
+  .masthead,
+  .main,
+  .footer {
+    padding: 20px;
   }
   .session-title,
   .workshop-title,
-  .location .name {
-    font-size: 27px;
+  .location-title {
+    font-size: 30px;
   }
-  .session-title,
-  .workshop-title {
-    margin-bottom: 0;
-  }
+  
 
-  .schedule-title,
-  .sponsor-title {
-  }
-  .sponsor-title {
-    font-size: 17px;
-  }
-  .session-time,
-  .workshop-time {
-  }
-
-  .main {
-    margin-bottom: 64px;
-  }
-  .footer {
-    max-width: 628px;
-    padding: 36px 0 80px;
-  }
-
-  .nav-main {
-    
-  }
-
-  .details-tickets-wrapper {
-    font-size: 56px; //48px
-    line-height: 74px;
-    margin-top: 70px;
-  }
-  .tickets-line {
+  .session-speaker-img-wrapper {
     display: block;
   }
-
-  .sub-hr {
-    &:before {
-      margin-bottom: 14px; // 20px
-    }
-  }
-
-  .session-wrapper ,
-  .monty {
-    padding-bottom: 14px; // 20px
-  }
-  .section-title {
-    float: left;
-  }
-  .monty {
-    clear: both;
-    font-size: 0;
-  }
-
   .session-speaker-img {
-    height: 200px;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 250px;
+    margin-bottom: 20px;
     margin-right: 40px;
-    margin-top: 6px;
     width: 127px;
   }
   .session-content {
@@ -235,121 +143,90 @@
     margin-top: 17px;
   }
 
+
   .workshop-time {
-    line-height: inherit;
-    float: right;
-  }
-  .workshop-wrapper {
-    clear: both;
+    display: inline;
   }
   .workshop-content-wrapper {
     @include clearfix;
     margin-bottom: 66px;
-    margin-top: 66px;
-  }
-  .workshop-title {
-    margin-top: 30px;
+    // margin-top: 66px;
   }
   .workshop-content {
     float: left;
     width: 65.28%;
+    width: calc((100% - (40px * 5)) / 6 * 4 + (40px * 3));
   }
   .workshop-list {
     float: right;
     margin-top: 0;
     width: 30.56%;
+    width: calc((100% - (40px * 5)) / 6 * 2 + 40px);
+
+    li:first-child h4 {
+      margin-top: 0;
+    }
   }
 
   .locations {
     font-size: 0;
+    text-align: center;
 
     & > li {
       display: inline-block;
       font-size: 17px;
-      // margin-left: 40px;
-      margin-left: 2%;
+      margin-left: 40px;
       vertical-align: top;
-      // width: calc((100% - (40px * 2)) / 3);
-      width: 32%;
+      width: calc((100% - (40px * 2)) / 3);
 
       &:first-child {
         margin-left: 0;
       }
     }
-    .section-title {
-      white-space: nowrap;
+    .sub-hr {
+      border-top: 0 none;
+      padding-top: 0;
     }
   }
   .location {
-    margin-bottom: 34px; //40px
-
-    &:first-child {
-      margin-top: 36px;
-    }
-    &:last-child {
-      margin-bottom: 12px;
-    }
-
-    a {
-      line-height: 1;
-    }
+    margin-bottom: 25px;
   }
   .location-description {
     float: none;
     margin-top: 6px;
   }
 
-  .main-sponsors {
-    margin-bottom: 40px;
-  }
   .sponsors-wrapper {
-    display: inline-block;
-    margin: 26px 0;
-    width: calc(((100% - (40px * 5)) / 6 * 4) + (40px * 3));
-
-    .full-monty & {
-      margin: 44px 0;
-    }
+    font-size: 0;
   }
   .sponsor {
-    margin-left: 40px;
-    width: calc((100% - (40px * 3)) / 4);
+    display: inline-block;
+    margin: 0 0 0 40px;
+    max-width: 100%;
+    vertical-align: middle;
+    width: calc((100% - (40px * 5)) / 3 + 40px);
 
-    .full-monty & {
-      width: calc(((100% - (40px * 3)) / 4 * 2) + 40px);
-    }
-
-    a {
-      border: 0 none;
-    }
-
-    &:nth-child(odd) {
-      margin-left: 40px;
-    }
     &:first-child {
       margin-left: 0;
     }
+    a {
+      border: 0 none;
+    }
   }
-  .sponsor-title {
-    display: inline-block;
-    margin-bottom: 0;
-    width: calc(((100% - (40px * 5)) / 6 * 2) + 80px);
+  .sponsor-half {
+    width: calc((100% - (40px * 7)) / 4);
+  }
+  .sponsor-small {
+    width: calc((100% - (40px * 5)) / 6);
   }
 
-  .blurb {
-    font-size: inherit;
-    margin-bottom: 45px;
-    margin-top: 85px;
+  .blurb,
+  .codeofconduct {
+    max-width: 628px;
   }
 }
 
 
 @include mq-min-check(1024px) {
-  .locations {
-    & > li {
-      margin-left: 40px;
-      // width: calc((100% - (40px * 2)) / 3);
-      width: 294px;
-    }
-  }
+
 }
