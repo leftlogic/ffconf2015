@@ -3,8 +3,8 @@
 @import "var";
 @import "mixin";
 
-@include font-face('OCR-A', "../fonts/ocr-a/OCRAExtended", normal);
-@include font-face('Steelfish', "../fonts/steelfish/Steelfish", normal);
+@include font-face('OCR-A', "../fonts/ocr-a/OCR-A");
+@include font-face('Steelfish', "../fonts/steelfish/steelfish_rg");
 
 *, *:after, *:before {
   @include box-sizing(border-box);
@@ -15,6 +15,7 @@ body {
   font: 16px/1.75 'OCR-A', monospace;
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
 }
 
 /* Typography
@@ -32,9 +33,14 @@ p {
   margin: 0;
   padding: 0;
 }
+h1, h2, h3, h4, strong {
+  font-weight: normal;
+}
+em {
+  font-style: normal;
+}
 h2, h3 {
   color: $c-white;
-  text-transform: uppercase;
 }
 .section-title {
   font-size: 30px;
@@ -47,22 +53,18 @@ h2, h3 {
   font-size: 60px;
   margin: 0;
 }
-.session-speaker-name,
-.session-links,
-.workshop-speaker-name,
-.workshop-time {
-  text-transform: uppercase;
-}
+.dtstart,
+.location,
 .session-time,
-.workshop-time {
+.workshop-time,
+.workshop-list h4,
+.location-description {
   color: $c-blue;
 }
-.session-content,
+.session-content p,
 .workshop-content,
-.blurb {
-
-  & > p {
-  }
+.workshop-list {
+  text-transform: none;
 }
 .workshop-content-extended {
   padding-top: 1em;
@@ -74,12 +76,16 @@ h2, h3 {
 .workshop-list {
   list-style: none;
   margin: 0;
-  padding: 0 0 0 1.4em;
+  padding: 0;
+
+  h4 {
+    margin: 0;
+  }
 }
 .tbc {
+  color: $c-grey-title;
 }
 .more-sessions {
-  margin-top: 27px;
 }
 .main-sponsors,
 .footer {
@@ -107,22 +113,12 @@ h2, h3 {
    ========================================================================== */
 .masthead {
   text-align: center;
-  text-transform: uppercase;
-
-  a {
-    &, &:link, &:visited {
-    }
-    &:hover, &:focus, &:active {
-    }
-  }
 }
 .nav-main {
-  // display: none;
   padding-top: 30px;
   padding-bottom: 50px;
 
   a {
-    border-bottom: 0 none;
     display: block;
     padding-bottom: 5px;
 
@@ -147,19 +143,6 @@ h2, h3 {
     padding: 100% 0 0;
     text-indent: -200%;
   }
-}
-.details-tickets-wrapper {
-}
-.tickets-wrapper {
-  &:before {
-    content: "-";
-    line-height: 1;
-    display: block;
-    text-align: center; // old IE fix
-  }
-}
-.tickets-lines {
-  margin: 0;
 }
 
 
@@ -267,7 +250,6 @@ h2, h3 {
   width: 100%; // this is for IE
 
   a {
-    border-bottom: 0 none;
     display: block;
   }
 
@@ -277,7 +259,8 @@ h2, h3 {
   }
 }
 .sponsor-title {
-  margin-bottom: 25px;
+  color: $c-grey-title;
+  margin-bottom: 36px;
 }
 
 /* Footer
@@ -286,11 +269,6 @@ h2, h3 {
   padding-bottom: 30px; //60px
   padding-top: 22px;
   text-align: center;
-}
-.blurb {
-  font-size: 20px;
-  margin-bottom: 20px;
-  margin-top: 20px;
 }
 #left-logic {
   height: 23px;
