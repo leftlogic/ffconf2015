@@ -1,13 +1,7 @@
 @charset "UTF-8";
 
-
-$fix-mqs: 1024px;
-$old-ie: true;
-
 @import "var";
 @import "mixin";
-
-// @import "mq";
 
 #left-logic {
   height: 47px;
