@@ -7,7 +7,7 @@ section.main.main-sponsors(role='region', aria-labelledby='sponsors')
 
   each cat, key in public._data.sponsors
     if cat.length
-      section.sub-hr.monty(class=key + '-monty')
+      section.monty(class=key + '-monty')
         h3.sponsor-title(role='heading', aria-level='3')= capitalize(key) + ' Monty Sponsors'
         div.sponsors-wrapper
           each sponsor in cat

@@ -42,7 +42,6 @@ section.main(class='session-style-' + config.mode, role='region', aria-labelledb
             if config.phase >= 3 && session.speaker.photo
               div.session-speaker-img-wrapper
                 div.session-speaker-img(style='background-image:url(/images/speakers/' + session.speaker.photo + ')')
-                  img(src='/images/speakers/' + session.speaker.photo, alt=session.speaker.alt?session.speaker.alt:'Picture of ' + session.speaker.name)
             div.session-about-wrapper
               header.session-header
                 h3.session-title(role='heading', aria-level='3')= session.title

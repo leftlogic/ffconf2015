@@ -1,9 +1,10 @@
 section.main(role='region', aria-labelledby='locations')
-  ul.locations#locations
+  h2#locations.section-title(role='heading', aria-level='2') Locations
+  ul.locations
     each locations in public._data.locations
-      li
-        h2.section-title(role='heading', aria-level='2')=locations.type
-        ul.sub-hr
+      li.sub-hr
+        h3.location-title(role='heading', aria-level='3')=locations.type
+        ul
           each location in locations.location
             li.vcard.location
               a.name.url.org.fn(href=location.url, target='_blank')=location.name
