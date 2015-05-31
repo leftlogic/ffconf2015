@@ -231,12 +231,6 @@ h2, h3 {
   a {
     display: block;
     line-height: 2.5;
-
-    // &:before {
-    //   padding-bottom: 1px;
-    //   padding-right: 0.25em;
-    //   vertical-align: bottom;
-    // }
   }
 }
 
@@ -258,6 +252,9 @@ h2, h3 {
     padding: 0;
   }
 }
+.location-title {
+  margin-bottom: 25px;
+}
 .location {
   margin-bottom: 20px; //30px
 
@@ -276,6 +273,7 @@ h2, h3 {
   border-radius: 5px;
   height: 50vw;
   margin: 20px auto;
+  max-width: 280px;
   width: 100%; // this is for IE
 
   a {
