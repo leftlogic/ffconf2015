@@ -70,11 +70,6 @@
         "name": "Google Chrome",
         "url": "https://developers.google.com/live/chrome/",
         "img": "chrome.png"
-      },
-      {
-        "name": "Amazon",
-        "url": "https://uk-amazon.icims.com/jobs/search?ss=1&searchCompany=1454350&mobile=false&width=1677&height=929&bga=true&needsRedirect=false",
-        "img": "amazon.png"
       }
     ],
     "half": [
@@ -82,43 +77,13 @@
         "name": "brandwatch",
         "url": "http://www.brandwatch.com/",
         "img": "brandwatch.png"
-      },
-      {
-        "name": "DigitalOcean",
-        "url": "https://digitalocean.com/",
-        "img": "digitalocean1.png"
-      },
-      {
-        "name": "NodeSource",
-        "url": "https://nodesource.com",
-        "img": "nodesource1.png"
-      },
-      {
-        "name": "Web Applications UK",
-        "url": "http://www.webapplicationsuk.com/",
-        "img": "webappsuk.png"
       }
     ],
     "small": [
       {
-        "name": "JS Bin",
-        "url": "http://jsbin.com/?utm_source=ff2015-site&utm_medium=sponsor&utm_campaign=ff2015-site",
-        "img": "jsbin-sponsor1.png"
-      },
-      {
-        "name": "Twilio",
-        "url": "http://twilio.com",
-        "img": "twilio.png"
-      },
-      {
-        "name": "Full Stack Training",
-        "url": "http://www.fullstacktraining.com/",
-        "img": "fst.png"
-      },
-      {
-        "name": "Media Molecule",
-        "url": "http://www.mediamolecule.com/jobs/javascript_developer",
-        "img": "mediamolecule.png"
+        "name": "Confwall",
+        "url": "https://confwall.com/?utm_source=ff2015-site&utm_medium=sponsor&utm_campaign=ff2015-site",
+        "img": "confwall.png"
       }
     ]
   },
@@ -136,33 +101,33 @@
       },
       {
         "duration": 40,
-        "title": "Building the Physical Web together",
+        "title": "How to win at mobile accessibility",
         "speaker": {
-          "name": "Scott Jenson",
-          "twitter": "scottjenson",
-          "photo": "scott.jpg"
+          "name": "",
+          "twitter": "",
+          "photo": ""
         },
-        "description": "How can we, as the web community, build the next generation of the web, the Physical Web, together?",
+        "description": "The mobile web-vs-native debate rages on–who’s winning? How can we create mobile experiences that are accessible and reliable to people with disabilities? In this talk, we’ll dive head-first into the mobile debate and reemerge informed on how we can use our skills as web developers to create brilliant mobile apps.",
         "bio": "",
         "links": [],
         "slides": false,
-        "audio": "http://media.ffconf.org/2014/1-scott.mp3",
-        "video": "https://www.youtube.com/watch?v=JBIg3eZ0e6A&index=1&list=PLXmT1r4krsTqrwW2jjXIXuCtFQ-5BIn-s"
+        "audio": "",
+        "video": ""
       },
       {
         "duration": 40,
-        "title": "Moving seamlessly through offline and online",
+        "title": "Talk about Everything",
         "speaker": {
-          "name": "Caolan McMahon",
-          "twitter": "caolan",
-          "photo": "caolan.jpg"
+          "name": "",
+          "twitter": "",
+          "photo": ""
         },
-        "description": "Unlike the always-wired machines of the past, computers are now truly personal, and people move through online and offline seamlessly. We'll explore how and why our apps should do the same, using Hood.ie and offline-first principles to do it in record time.",
+        "description": "",
         "bio": "",
         "links": [],
         "slides": false,
-        "audio": "http://media.ffconf.org/2014/2-caolan.mp3",
-        "video": "https://www.youtube.com/watch?v=-x3Q61dBAwk&index=2&list=PLXmT1r4krsTqrwW2jjXIXuCtFQ-5BIn-s"
+        "audio": "",
+        "video": ""
       },
       {
         "break": true,
@@ -171,33 +136,33 @@
       },
       {
         "duration": 40,
-        "title": "Navigating Open Source",
+        "title": "Practical SVG",
         "speaker": {
-          "name": "Hannah Wolfe",
-          "twitter": "ErisDS",
-          "photo": "hannah.jpg"
+          "name": "",
+          "twitter": "",
+          "photo": ""
         },
-        "description": "Distributed, Non-Profit, Sustainable and Open Source: Ghost does nothing the easy way. Discover why the project made these choices and how they're creating a community and shipping code in the open.",
+        "description": "",
         "bio": "",
         "links": [],
-        "slides": "https://speakerdeck.com/erisds/navigating-open-source",
-        "audio": "http://media.ffconf.org/2014/3-hannah.mp3",
-        "video": "https://www.youtube.com/watch?v=o3HBe8WhzvE&index=3&list=PLXmT1r4krsTqrwW2jjXIXuCtFQ-5BIn-s"
+        "slides": "",
+        "audio": "",
+        "video": ""
       },
       {
         "duration": 40,
-        "title": "Self-hosted JS",
+        "title": "insanity.js",
         "speaker": {
-          "name": "Andy Wingo",
-          "twitter": "andywingo",
-          "photo": "andy.jpg"
+          "name": "",
+          "twitter": "",
+          "photo": ""
         },
-        "description": "The parts of V8 and SpiderMonkey that are actually written in JS.  Let's implement an ES.next feature in JS, during the talk!",
+        "description": "",
         "bio": "",
         "links": [],
-        "slides": "https://wingolog.org/pub/ffconf-2014-slides.pdf",
-        "audio": "http://media.ffconf.org/2014/4-andy.mp3",
-        "video": "https://www.youtube.com/watch?v=YFFvNQWf3Iw&index=4&list=PLXmT1r4krsTqrwW2jjXIXuCtFQ-5BIn-s"
+        "slides": "",
+        "audio": "",
+        "video": ""
       },
       {
         "break": true,
