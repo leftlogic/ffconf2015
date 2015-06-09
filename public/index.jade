@@ -55,11 +55,17 @@ html(id=id)
 
     if config.phase >= 0.5
       include _partials/locations
+    
+    div.xwing-wrapper.fixedsticky
+      include _partials/xwing.html
 
     include _partials/sponsors
 
     include _partials/footer
 
     <!--[if gt IE 8]><!-->
+    script(src='/js/jquery-2.1.4.min.js')
+    script(src='/js/fixedfixed.js')
+    script(src='/js/fixedsticky.js')
     script(src='/js/script.js')
     <!--<![endif]-->

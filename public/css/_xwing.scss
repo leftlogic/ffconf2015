@@ -1,9 +1,36 @@
 /* X-Wing
    ========================================================================== */
-.buttonA use {
-  transform-origin: 50% 50%;
-  transition: all 1s;
+@import "fixedsticky";
+.xwing-wrapper {
+  overflow: hidden;
+  width: 100%;
+  // height: 200px;
+  // background: red;
+  bottom: 0;
+
+  svg {
+    display: block;
+    left: calc((100% - 700px) / 2);
+    position: relative;
+    width: 700px;
+  }
 }
-.buttonArotate use {
-  transform: rotate(45deg);
+
+@include mq-min-check(640px) {
+  .xwing-wrapper svg {
+    left: calc((100% - 1400px) / 2);
+    width: 1400px;
+  }
+}
+
+
+.button2 {
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transition: all 1s;
+          transition: all 1s;
+}
+.buttonArotate {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
