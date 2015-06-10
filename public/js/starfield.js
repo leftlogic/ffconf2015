@@ -88,12 +88,16 @@ var BigBang = {
  * @param {string} canvasId The DOM Id of the <div> containing a <canvas> tag
  */
 var StarField = function(containerId) {
-    this.container = document.getElementById(containerId);
-    this.canvasElem = this.container.getElementsByTagName('canvas')[0];
-    this.canvas = this.canvasElem.getContext('2d');
+    // this.container = document.getElementById(containerId);
+    // this.canvasElem = this.container.getElementsByTagName('canvas')[0];
+    // this.canvas = this.canvasElem.getContext('2d');
+
+    this.container = document.body;
 
     this.width = this.container.offsetWidth;
-    this.height = this.container.offsetHeight;
+    this.height = document.documentElement.clientHeight;
+
+    this.canvas = document.getCSSCanvasContext("2d", "starfield", this.width, this.height);
 
     this.starField = [];
 
@@ -178,8 +182,8 @@ StarField.prototype._renderFrame = function(elapsedTime) {
  */
 StarField.prototype._adjustCanvasSize = function(width, height) {
     // Set the canvas size to match the container ID (and cache values)
-    this.width = this.canvasElem.width = width || this.container.offsetWidth;
-    this.height = this.canvasElem.height = height || this.container.offsetHeight;
+    // this.width = this.canvasElem.width = width || this.container.offsetWidth;
+    // this.height = this.canvasElem.height = height || this.container.offsetHeight;
 };
 
 /**

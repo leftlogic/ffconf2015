@@ -327,5 +327,17 @@ h2, h3 {
 }
 
 
+// .fullScreen {
+//   height: 100%;
+//   position: fixed;
+//   width: 100%;
+//   z-index: -1;
+// }
+body {
+  background-attachment: fixed;
+  background: -webkit-canvas(starfield);
+}
+
+
 @import "mq";
 @import "xwing";
