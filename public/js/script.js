@@ -46,9 +46,9 @@
 // X-Wing
 (function() {
   $(document).on('ready', function() {
-    var $buttonA = $('.button2');
+    var $buttonA = $('.xwing-btn2');
     $buttonA.on('click', function() {
-      this.classList.toggle('buttonArotate');
+      this.classList.toggle('xwing-btn2-rotate');
     });
   });
   // sticky
