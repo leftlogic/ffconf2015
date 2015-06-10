@@ -17,6 +17,7 @@ How to create png
       <rect id="square_small" x="3.5" y="4" width="7" height="7" fill="#008F69"/>
     </g>
     <g id="rectangle" transform="translate(15.75, 15.75)">
+      <polygon id="rectangle_border" points="0 0, 0 15, 15 30, 30 30, 30 15, 15 0" stroke-width="1.5" fill="#FFF" stroke="#FFF"/>
       <rect x="-15" y="15" width="15" height="15" transform="skewX(45)" fill="#FF5F00"/>
       <rect id="rectangle_shade" x="15" y="-15" width="15" height="15" transform="skewY(45)" fill="#F24D00"/>
       <rect id="rectangle_square_big" x="0" y="0" width="15" height="15" fill="#FF5F00"/>
