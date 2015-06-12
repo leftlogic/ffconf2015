@@ -98,12 +98,13 @@ h2, h3 {
 }
 .more-sessions {
 }
-.main-sponsors,
-.footer {
+.wrapper-bottom {
   background: $c-grey-bg;
+  box-shadow: 0 0 20px 10px rgba(0,0,0,.5);
   font-family: Steelfish, Verdana;
   font-size: 20px;
   letter-spacing: 2px;
+  position: relative;
   text-align: center;
 }
 
