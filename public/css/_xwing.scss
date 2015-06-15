@@ -21,6 +21,39 @@ $svgwidth: 1440px;
     * {
       pointer-events: all;
     }
+    #xwing-link {
+      rect {
+        stroke: $c-grey-title;
+      }
+      text {
+        fill: $c-grey-title;
+        font-size: 30px;
+        stroke: none;
+      }
+      // tspan {
+      //   font-size: 0;
+      // }
+      a {
+        rect {
+          stroke: $c-yellow;
+        }
+        text {
+          fill: $c-yellow;
+        }
+      }
+      a:hover {
+        rect {
+          fill: $c-yellow;
+        }
+        text {
+          fill: $c-grey-title;
+        }
+      }
+    }
+  }
+
+  .no-svg & {
+    display: none;
   }
 }
 
