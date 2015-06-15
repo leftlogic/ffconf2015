@@ -4,15 +4,21 @@
 .xwing-wrapper {
   overflow: hidden;
   width: 100%;
-  // height: 200px;
-  // background: red;
   bottom: 0;
+  // never the target of mouse events
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events
+  pointer-events: none;
 
   svg {
+    bottom: 0;
     display: block;
-    left: calc((100% - 700px) / 2);
+    left: calc((100% - 1440px) / 2);
     position: relative;
-    width: 700px;
+    width: 1440px;
+
+    * {
+      pointer-events: all;
+    }
   }
 }
 
