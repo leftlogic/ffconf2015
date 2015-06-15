@@ -273,12 +273,7 @@ h2, h3 {
   width: 100%; // this is for IE
 
   a {
-    display: -webkit-flex;
-    display:         flex;
-    -webkit-align-items: center;
-            align-items: center;
-    -webkit-justify-content: center;
-            justify-content: center;
+    display: block;
     height: 100%;
     padding: 20px;
     width: 100%;
@@ -287,8 +282,13 @@ h2, h3 {
   img {
     border: 0 none; // IE fix
     display: block;
+    margin: 0 auto;
     max-height: 100%;
     max-width: 100%;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 }
 .sponsor-title {
