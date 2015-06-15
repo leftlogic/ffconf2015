@@ -1,6 +1,8 @@
 /* X-Wing
    ========================================================================== */
 @import "fixedsticky";
+$svgwidth: 1440px;
+
 .xwing-wrapper {
   overflow: hidden;
   width: 100%;
@@ -12,9 +14,9 @@
   svg {
     bottom: 0;
     display: block;
-    left: calc((100% - 1440px) / 2);
+    left: calc((100% - #{$svgwidth}) / 2);
     position: relative;
-    width: 1440px;
+    width: #{$svgwidth};
 
     * {
       pointer-events: all;
@@ -22,10 +24,25 @@
   }
 }
 
-@include mq-min-check(640px) {
-  .xwing-wrapper svg {
-    left: calc((100% - 1400px) / 2);
-    width: 1400px;
+@include mq-min-check(1400px) {
+  .xwing-wrapper {
+    &:before, &:after {
+      background: linear-gradient(to right, #000 0%, rgba(0, 0, 0, 0) 100%);
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 100%;
+      left: calc(50% - #{$svgwidth / 2});
+      position: absolute;
+      top: 0;
+      width: 100px;
+      z-index: 1;
+    }
+    &:after {
+      background: linear-gradient(to left, #000 0%, rgba(0, 0, 0, 0) 100%) no-repeat;
+      left: auto;
+      right: calc(50% - #{$svgwidth / 2});
+    }
   }
 }
 
