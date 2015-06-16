@@ -10,12 +10,12 @@
     "ticketUrl" : "http://leftlogic.stagehq.com",
     "source": "https://github.com/leftlogic/ffconf2015",
     "config": {
-      "phase": 0.5,
+      "phase": 1,
       "soldout": {
-        "conference": true,
-        "workshops": true,
-        "debug-and-tools": true,
-        "testing": true
+        "conference": false,
+        "workshops": false,
+        "debug-and-tools": false,
+        "testing": false
       },
       "mode": "schedule",
       "comments": {

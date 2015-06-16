@@ -1,13 +1,16 @@
 TODO:
 
-- [ ] left-logic.png needs new colors
+- [x] left-logic.png needs new colors
 - [x] left-logic.svg needs new colors
-- [ ] new logo.png
-- [ ] heroku server
+- [x] new logo.png
+- [x] heroku server
 - [x] no img for speakers on 320 and 640? yes
 - [ ] become a sponsor button?
 - [ ] style for hover link
-- [ ] online host for webfonts
+- [x] online host for webfonts
+- [x] no-svg fallback
+- [ ] test in all browsers
+- [ ] google analytics code
 
 
 Grids:
