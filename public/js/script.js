@@ -52,5 +52,48 @@
     });
   });
   // sticky
-  $('.xwing-wrapper').fixedsticky();
+  // $('.xwing-wrapper').fixedsticky();
+  var $xwing = $('.xwing-wrapper');
+
+  var $xwingHeight = $xwing.height();
+  var $xwingDummy = $('<div class="xwing-dummy"></div>');
+  $xwingDummy.css('height', $xwingHeight + 'px').hide();
+  $xwingDummy.insertAfter($xwing);
+
+  // var vv = new Waypoint({
+  //   element: document.getElementById('xwing'),
+  //   handler: function(direction) {
+  //     console.log(direction + ' hit');
+  //     if (direction === 'down') {
+  //       $xwing.css('position', 'static');
+  //       $xwingDummy.hide();
+  //     }
+  //     if (direction === 'up') {
+  //       $xwing.css('position', 'fixed');
+  //       $xwingDummy.show();
+  //     }
+  //   },
+  //   offset: 'bottom-in-view'
+  // });
+  // window.onload = function() {
+  //   setTimeout(function() {
+      $xwing.css('position', 'fixed').css('overflow', '');
+      $xwingDummy.show();
+  //   }, 1000);
+  // };
+  var vv = new Waypoint({
+    element: document.getElementById('bottom'),
+    handler: function(direction) {
+      console.log(direction + ' hit');
+      if (direction === 'down') {
+        $xwing.css('position', 'static').css('overflow', 'hidden');
+        $xwingDummy.hide();
+      }
+      if (direction === 'up') {
+        $xwing.css('position', 'fixed').css('overflow', '');
+        $xwingDummy.show();
+      }
+    },
+    offset: '100%'
+  });
 })();
