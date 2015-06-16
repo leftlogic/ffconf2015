@@ -4,3 +4,4 @@ node_modules/
 .DS_Store
 ocr-a/
 steelfish/
+nodemon.json
