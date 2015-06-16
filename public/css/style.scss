@@ -126,7 +126,8 @@ h2, h3 {
   text-align: center;
 }
 .nav-main {
-  margin: 56px 0 24px;
+  margin: 56px auto 24px;
+  max-width: 480px;
 
   a {
     display: block;
@@ -166,6 +167,26 @@ h2, h3 {
 .dtlocation {
   display: block;
   margin: 20px 0;
+}
+.tickets-button {
+  border: 2px solid $c-grey-title;
+  border-radius: 10px;
+  color: $c-grey-title;
+  display: none;
+  padding: 1em;
+
+  .no-svg & {
+    display: inline;
+  }
+}
+a.tickets-button {
+  border-color: $c-yellow;
+  color: $c-yellow;
+
+  &:hover, &:focus, &:active {
+    background: $c-yellow;
+    color: $c-grey-title;
+  }
 }
 
 
@@ -316,7 +337,6 @@ h2, h3 {
     display: block;
   }
 }
-// no-svg fallback
 .no-svg .left-logic {
   background-image: url(../images/left-logic.png);
   background-position: top;
