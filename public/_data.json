@@ -84,6 +84,11 @@
         "name": "Confwall",
         "url": "https://confwall.com/?utm_source=ff2015-site&utm_medium=sponsor&utm_campaign=ff2015-site",
         "img": "confwall.png"
+      },
+      {
+        "name": "potato",
+        "url": "https://p.ota.to/",
+        "img": "potato.png"
       }
     ]
   },
@@ -122,7 +127,7 @@
           "twitter": "",
           "photo": ""
         },
-        "description": "",
+        "description": "Software influences the lives of billions of humans every day. As people working on it, we face a broad variety of challenges – and we have a responsibility towards each of these humans. Let's take a look at the status of software development today, and see what each of us can do to act according to this responsibility.",
         "bio": "",
         "links": [],
         "slides": false,
@@ -136,13 +141,13 @@
       },
       {
         "duration": 40,
-        "title": "Practical SVG",
+        "title": "Practical(ly awesome) SVG",
         "speaker": {
           "name": "",
           "twitter": "",
           "photo": ""
         },
-        "description": "",
+        "description": "SVG is awesome, but can be quite overwhelming at first glance. In this talk, Sara is going to introduce us to what’s possible in SVG, what tools we have at hand to help us, and how and why SVG can and should be a core part of every web developer’s knowledge stack.",
         "bio": "",
         "links": [],
         "slides": "",
@@ -151,13 +156,13 @@
       },
       {
         "duration": 40,
-        "title": "insanity.js",
+        "title": "Code Calligrams",
         "speaker": {
           "name": "",
           "twitter": "",
           "photo": ""
         },
-        "description": "",
+        "description": "How do we draw new worlds, using nothing else than the languages of the Web?",
         "bio": "",
         "links": [],
         "slides": "",
@@ -171,18 +176,18 @@
       },
       {
         "duration": 40,
-        "title": "Lean Mean CSS Machine",
+        "title": "Operations: a developer's guide",
         "speaker": {
-          "name": "Tobias Ahlin",
-          "twitter": "tobiasahlin",
-          "photo": "tobi.jpg"
+          "name": "",
+          "twitter": "",
+          "photo": ""
         },
-        "description": "A day shouldn’t go by without you removing something. Design techniques and front-end optimization comes together in a behind-the-scenes look at what tools and techniques GitHub uses to make sure things render fast, with as little code as possible, and consistently.",
+        "description": "An introduction to the web ops skills that will help you be a better developer. What you need to know about virtualisation, containerisation and wrangling servers, and some tools we use that might make development easier. I spent two years on the infrastructure team so you don't have to!",
         "bio": "",
         "links": [],
         "slides": false,
-        "audio": "http://media.ffconf.org/2014/5-tobias.mp3",
-        "video": "https://www.youtube.com/watch?v=0uhlFCQkml4&index=5&list=PLXmT1r4krsTqrwW2jjXIXuCtFQ-5BIn-s"
+        "audio": "",
+        "video": ""
       },
 
       {
