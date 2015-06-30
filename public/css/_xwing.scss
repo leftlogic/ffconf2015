@@ -46,7 +46,7 @@ $svgwidth: 1150px;
           fill: $c-yellow;
         }
       }
-      a:hover {
+      a:hover, a:focus {
         rect {
           fill: $c-yellow;
         }
