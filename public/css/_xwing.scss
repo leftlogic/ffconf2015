@@ -3,6 +3,9 @@
 // @import "fixedsticky";
 $svgwidth: 1150px;
 
+.masthead {
+  margin-bottom: 349px;
+}
 .xwing-wrapper {
   // overflow: hidden;
   width: 100%;
@@ -10,6 +13,7 @@ $svgwidth: 1150px;
   // never the target of mouse events
   // https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events
   pointer-events: none;
+  position: fixed;
   transform: translateZ(0);
 
   svg {
