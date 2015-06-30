@@ -8,12 +8,13 @@
  * @param  {number} x
  * @param  {number} y
  */
+var absoluteMaxSpeed = 0.01;
 var Star = function(x, y, maxSpeed) {
     this.x = x;
     this.y = y;
     this.slope = y / x; // This only works because our origin is always (0,0)
     this.opacity = 0;
-    this.speed = Math.max(Math.random() * maxSpeed, 1);
+    this.speed = Math.max(Math.random() * maxSpeed, absoluteMaxSpeed);
 };
 
 /**
@@ -124,7 +125,7 @@ StarField.prototype._updateStarField = function() {
                 -this.width / 10, -this.height / 10,
                    this.width / 5, this.height / 5
             );
-            star.resetPosition(randomLoc.x, randomLoc.y, 0.01); // this.maxStarSpeed
+            star.resetPosition(randomLoc.x, randomLoc.y, absoluteMaxSpeed); // this.maxStarSpeed
         }
     }
 };
@@ -273,7 +274,7 @@ setTimeout(function () {
 
     if (maxSpeed > .05) {
       for (; i < length; i++) {
-        stars.starField[i].speed = Math.max(Math.random() * maxSpeed, 0.01)
+        stars.starField[i].speed = Math.max(Math.random() * maxSpeed, absoluteMaxSpeed)
       }
       requestAnimationFrame(slow);
     }
