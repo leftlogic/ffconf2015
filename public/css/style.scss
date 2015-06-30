@@ -27,6 +27,7 @@ a {
     color: $c-yellow;
   }
   &:hover, &:focus, &:active {
+    color: $c-white;
   }
 }
 p {
