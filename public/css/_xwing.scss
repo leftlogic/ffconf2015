@@ -1,7 +1,7 @@
 /* X-Wing
    ========================================================================== */
 // @import "fixedsticky";
-$svgwidth: 1440px;
+$svgwidth: 1000px;
 
 .xwing-wrapper {
   // overflow: hidden;
@@ -59,14 +59,14 @@ $svgwidth: 1440px;
 }
 
 @include mq-min-check(320px) {
-  $svgwidth: 1440px;
+  $svgwidth: 1000px;
   .xwing-wrapper svg {
     left: calc((100% - #{$svgwidth}) / 2);
     width: #{$svgwidth};
   }
 }
 
-@include mq-min-check(1400px) {
+@include mq-min-check(1000px) {
   .xwing-wrapper {
     &:before, &:after {
       background: linear-gradient(to right, #000 0%, rgba(0, 0, 0, 0) 100%);
