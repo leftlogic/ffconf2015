@@ -124,7 +124,7 @@ StarField.prototype._updateStarField = function() {
                 -this.width / 10, -this.height / 10,
                    this.width / 5, this.height / 5
             );
-            star.resetPosition(randomLoc.x, randomLoc.y, this.maxStarSpeed);
+            star.resetPosition(randomLoc.x, randomLoc.y, 0.01); // this.maxStarSpeed
         }
     }
 };
