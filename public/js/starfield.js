@@ -187,7 +187,7 @@ StarField.prototype._watchCanvasSize = function(elapsedTime) {
         width,
         height;
 
-    window.requestAnimationFrame(this._watchCanvasSize.bind(this));
+    // window.requestAnimationFrame(this._watchCanvasSize.bind(this));
 
     // Skip frames unless at least 333ms have passed since the last check
     // (Cap to ~3fps)
