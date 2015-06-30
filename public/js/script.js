@@ -81,19 +81,19 @@
       $xwingDummy.show();
   //   }, 1000);
   // };
-  var vv = new Waypoint({
-    element: document.getElementById('bottom'),
-    handler: function(direction) {
-      console.log(direction + ' hit');
-      if (direction === 'down') {
-        $xwing.css('position', 'static').css('overflow', 'hidden');
-        $xwingDummy.hide();
-      }
-      if (direction === 'up') {
-        $xwing.css('position', 'fixed').css('overflow', '');
-        $xwingDummy.show();
-      }
-    },
-    offset: '100%'
-  });
+  // var vv = new Waypoint({
+  //   element: document.getElementById('bottom'),
+  //   handler: function(direction) {
+  //     console.log(direction + ' hit');
+  //     if (direction === 'down') {
+  //       $xwing.css('position', 'static').css('overflow', 'hidden');
+  //       $xwingDummy.hide();
+  //     }
+  //     if (direction === 'up') {
+  //       $xwing.css('position', 'fixed').css('overflow', '');
+  //       $xwingDummy.show();
+  //     }
+  //   },
+  //   offset: '100%'
+  // });
 })();

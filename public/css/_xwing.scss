@@ -1,7 +1,7 @@
 /* X-Wing
    ========================================================================== */
 // @import "fixedsticky";
-$svgwidth: 1000px;
+$svgwidth: 1150px;
 
 .xwing-wrapper {
   // overflow: hidden;
@@ -59,7 +59,7 @@ $svgwidth: 1000px;
 }
 
 @include mq-min-check(320px) {
-  $svgwidth: 1000px;
+  $svgwidth: 1150px;
   .xwing-wrapper svg {
     left: calc((100% - #{$svgwidth}) / 2);
     width: #{$svgwidth};

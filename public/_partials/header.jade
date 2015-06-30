@@ -21,7 +21,7 @@ if config.phase == 1
       - buy = true
   else
     - line = 'Tickets available to buy. More go on sale at 11am.'
-    - button = 'Buy Tickets £' + ticketPrice + ' <abbr title="plus Value Added Tax">+ VAT</abbr>'
+    - button = 'Buy Tickets'
     - buy = true
 if config.phase >= 2 && config.phase < 4
   if config.soldout.conference
@@ -35,7 +35,7 @@ if config.phase >= 2 && config.phase < 4
       - buy = true
   else
     - line = 'Tickets available to buy. Last batch.'
-    - button = 'Buy Tickets £' + ticketPrice + ' <abbr title="plus Value Added Tax">+ VAT</abbr>'
+    - button = 'Buy Tickets'
     - buy = true
 if config.phase == 4
     - line = ''

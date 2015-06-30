@@ -120,10 +120,6 @@ StarField.prototype._updateStarField = function() {
         // Recycle star obj if it goes out of the frame
         if ((Math.abs(star.x) > this.width / 2) ||
             (Math.abs(star.y) > this.height / 2)) {
-            //randomLoc = BigBang.getRandomPosition(
-            //    -this.width / 2, -this.height / 2,
-            //       this.width, this.height
-            //);
             randomLoc = BigBang.getRandomPosition(
                 -this.width / 10, -this.height / 10,
                    this.width / 5, this.height / 5
@@ -275,9 +271,9 @@ setTimeout(function () {
     var maxSpeed = stars.maxStarSpeed *= .8;
     var i = 0, length = stars.starField.length;
 
-    if (maxSpeed > .005) {
+    if (maxSpeed > .05) {
       for (; i < length; i++) {
-        stars.starField[i].speed = Math.max(Math.random() * maxSpeed, 1)
+        stars.starField[i].speed = Math.max(Math.random() * maxSpeed, 0.01)
       }
       requestAnimationFrame(slow);
     }
