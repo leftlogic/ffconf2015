@@ -13,12 +13,28 @@ global.idify = function (s) { return s.replace(/&.*?;/g, '').replace(/\s+/g, '-'
 // compiled, this is the cleanest solution.
 global.moment = moment;
 
-harp.compile(__dirname, outputPath, function (errors) {
-  if (errors) {
-    console.log(JSON.stringify(errors, null, 2));
-    process.exit(1);
-  }
+if (process.env.NODE_ENV !== 'production') {
+  // Yeah...don't ask.
+  var config = require('./harp.json');
+  Object.keys(config.globals).forEach(function (key) {
+    global[key] = config.globals[key];
+  });
+  // </rando>
+  var express = require('express');
+  var app = express();
 
-  console.log('Running harp-static on ' + port);
-  server(outputPath, port);
-});
+  app.use(express.static(__dirname + '/public'));
+  app.use(harp.mount(__dirname + '/public'));
+
+  app.listen(process.env.PORT || 9000);
+} else {
+  harp.compile(__dirname, outputPath, function (errors) {
+    if (errors) {
+      console.log(JSON.stringify(errors, null, 2));
+      process.exit(1);
+    }
+
+    console.log('Running harp-static on ' + port);
+    server(outputPath, port);
+  });
+}
