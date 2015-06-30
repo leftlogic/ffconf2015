@@ -10,6 +10,7 @@ $svgwidth: 1000px;
   // never the target of mouse events
   // https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events
   pointer-events: none;
+  transform: translateZ(0);
 
   svg {
     bottom: 0;
