@@ -89,7 +89,7 @@ function init() {
 
 function pad(s, length) {
   var clen = (s+'').length;
-  return '0'.repeat(length - clen) + s;
+  return Array(length - clen + 1).join('0') + s;
 }
 
 function text() {
