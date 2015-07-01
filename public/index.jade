@@ -62,6 +62,8 @@ html(id=id)
 
       div#xwing.xwing-wrapper.fixedsticky
         include _partials/xwing
+        if config.phase < 1
+          canvas#countdown
 
       div#bottom.wrapper-bottom
         include _partials/sponsors

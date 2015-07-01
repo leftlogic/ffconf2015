@@ -93,7 +93,7 @@ function pad(s, length) {
 }
 
 function text() {
-  var d = Date.parse('2015-07-15T10:00:00');
+  var d = Date.parse('2015-07-15T11:00:00');
   var t = pad((d - Date.now()) / 1000 | 0, 8);
   var textWidth = ctx.measureText(t+'');
   ctx.fillText(t, width/2 - textWidth.width/2, 20);
