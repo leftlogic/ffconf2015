@@ -16,11 +16,10 @@ $svgheight: 349px;
 }
 
 #countdown {
-  bottom: 0;
+  bottom: 20px;
   left: 50%;
+  margin-left: -100px;
   position: absolute;
-  -webkit-transform: translate3d(-50%, -20px, 0);
-          transform: translate3d(-50%, -20px, 0);
 }
 
 .xwing-wrapper {
