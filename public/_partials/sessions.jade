@@ -34,10 +34,7 @@ section.main(class='session-style-' + config.mode, role='region', aria-labelledb
           if session.break
               header.break
                 h3.schedule-title(role='heading', aria-level='3')= session.title
-                div.session-time
-                  =session.start + ' '
-                  &mdash;
-                  =' ' + session.end
+                div.session-time!=session.start + ' &mdash; ' + session.end
           else
             if config.phase >= 3 && session.speaker.photo
               div.session-speaker-img-wrapper
@@ -52,10 +49,7 @@ section.main(class='session-style-' + config.mode, role='region', aria-labelledb
                     else
                       span= session.speaker.name
                 if config.phase == 3
-                  div.session-time.session-speaker-time
-                    =session.start + ' '
-                    &mdash;
-                    =' ' + session.end
+                  div.session-time.session-speaker-time!=session.start + ' &mdash; ' + session.end
               div.session-content
                 if session.description
                   !=global.marked(session.description)
