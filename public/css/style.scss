@@ -3,8 +3,8 @@
 @import "var";
 @import "mixin";
 
-@include font-face('OCR-A', "http://media.ffconf.org/fonts/OCR-A");
-@include font-face('Steelfish', "http://media.ffconf.org/fonts/steelfish_rg");
+// @include font-face('OCR-A', "http://media.ffconf.org/fonts/OCR-A");
+// @include font-face('Steelfish', "http://media.ffconf.org/fonts/steelfish_rg");
 
 *, *:after, *:before {
   @include box-sizing(border-box);
