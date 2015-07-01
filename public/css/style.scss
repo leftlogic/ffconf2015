@@ -145,6 +145,11 @@ h2, h3 {
   -webkit-transform: perspective(262px) rotateX(45deg);
           transform: perspective(262px) rotateX(45deg);
 
+  .i-hate-safari & {
+    -webkit-transform: none;
+            transform: none;
+  }
+
   svg {
     stroke: $c-yellow;
   }

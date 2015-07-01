@@ -37,6 +37,10 @@ html(id=id)
       if (!supportsSVG()) {
         document.documentElement.className += ' no-svg';
       }
+      // Is Safari?
+      if (/constructor/i.test(window.HTMLElement)) {
+        document.documentElement.className += ' i-hate-safari';
+      }
 
   - var completeDate = moment(date + ' ' + startTime)
 
