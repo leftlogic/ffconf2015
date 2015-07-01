@@ -63,11 +63,11 @@ $svgwidth: 1150px;
 }
 
 @include mq-min-check(320px) {
-  $svgwidth: 1150px;
-  .xwing-wrapper svg {
-    left: calc((100% - #{$svgwidth}) / 2);
-    width: #{$svgwidth};
-  }
+  // $svgwidth: 1150px;
+  // .xwing-wrapper svg {
+  //   left: calc((100% - #{$svgwidth}) / 2);
+  //   width: #{$svgwidth};
+  // }
 }
 
 @include mq-min-check(1000px) {

@@ -349,28 +349,21 @@ a.tickets-button {
 }
 
 
-.fullScreen {
+/* Starfield
+   ========================================================================== */
+.fullscreen {
   height: 100%;
   position: fixed;
   width: 100%;
   z-index: 0;
 }
-html, body {
-  // height: 100%
-}
-.test2 {
-  // height: 100%;
-  // overflow: scroll;
+.page-wrapper {
   position: relative;
   z-index: 1;
   // Momentum Scrolling on iOS Overflow Elements
   // https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/
   -webkit-overflow-scrolling: touch;
 }
-// body {
-//   background-attachment: fixed;
-//   background: -webkit-canvas(starfield);
-// }
 
 
 @import "mq";
