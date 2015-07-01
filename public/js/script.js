@@ -44,7 +44,7 @@
   }
 })();
 
-// X-Wing
+// // X-Wing
 // (function() {
 //   $(document).on('ready', function() {
 //     var $buttonA = $('.xwing-btn2');
