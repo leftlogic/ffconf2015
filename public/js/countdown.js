@@ -112,7 +112,7 @@ var speed = 15;
 var prevFrameTime = 0;
 function draw(elapsedTime) {
   var timeSinceLastFrame = elapsedTime - (prevFrameTime || 0);
-  window.requestAnimationFrame(draw);
+  window.raf(draw);
 
   if (timeSinceLastFrame < 30 && prevFrameTime) {
     return;

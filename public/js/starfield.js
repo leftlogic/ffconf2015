@@ -159,7 +159,7 @@ StarField.prototype._renderStarField = function() {
 StarField.prototype._renderFrame = function(elapsedTime) {
     var timeSinceLastFrame = elapsedTime - (this.prevFrameTime || 0);
 
-    window.requestAnimationFrame(this._renderFrame.bind(this));
+    window.raf(this._renderFrame.bind(this));
 
     // Skip frames unless at least 30ms have passed since the last one
     // (Cap to ~30fps)
@@ -188,7 +188,7 @@ StarField.prototype._watchCanvasSize = function(elapsedTime) {
         width,
         height;
 
-    // window.requestAnimationFrame(this._watchCanvasSize.bind(this));
+    // window.raf(this._watchCanvasSize.bind(this));
 
     // Skip frames unless at least 333ms have passed since the last check
     // (Cap to ~3fps)
@@ -218,8 +218,8 @@ StarField.prototype._initScene = function(numStars) {
     }
 
     // Intervals not stored because I don't plan to detach them later...
-    window.requestAnimationFrame(this._renderFrame.bind(this));
-    window.requestAnimationFrame(this._watchCanvasSize.bind(this));
+    window.raf(this._renderFrame.bind(this));
+    window.raf(this._watchCanvasSize.bind(this));
 };
 
 /**
@@ -234,35 +234,6 @@ StarField.prototype.render = function(numStars, maxStarSpeed) {
     this._initScene(this.numStars);
 };
 
-/**
- * requestAnimationFrame shim layer with setTimeout fallback
- * @see http://paulirish.com/2011/requestanimationframe-for-smart-animating
- */
-(function() {
-    var lastTime = 0;
-    var vendors = ['ms', 'moz', 'webkit', 'o'];
-    for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
-        window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
-        window.cancelAnimationFrame =
-          window[vendors[x]+'CancelAnimationFrame'] || window[vendors[x]+'CancelRequestAnimationFrame'];
-    }
-
-    if (!window.requestAnimationFrame)
-        window.requestAnimationFrame = function(callback, element) {
-            var currTime = new Date().getTime();
-            var timeToCall = Math.max(0, 16 - (currTime - lastTime));
-            var id = window.setTimeout(function() { callback(currTime + timeToCall); },
-              timeToCall);
-            lastTime = currTime + timeToCall;
-            return id;
-        };
-
-    if (!window.cancelAnimationFrame)
-        window.cancelAnimationFrame = function(id) {
-            clearTimeout(id);
-        };
-}());
-
 // Kick off!
 var stars = new StarField('fullScreen');
 stars.render(256, 20);
@@ -276,7 +247,7 @@ setTimeout(function () {
       for (; i < length; i++) {
         stars.starField[i].speed = Math.max(Math.random() * maxSpeed, absoluteMaxSpeed)
       }
-      requestAnimationFrame(slow);
+      window.raf(slow);
     }
   }
   slow();
