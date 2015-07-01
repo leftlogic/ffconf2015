@@ -106,19 +106,52 @@
       },
       {
         "duration": 40,
-        "title": "How to win at mobile accessibility",
+        "title": "Practical(ly awesome) SVG",
         "speaker": {
           "name": "",
           "twitter": "",
           "photo": ""
         },
-        "description": "The mobile web-vs-native debate rages on–who’s winning? How can we create mobile experiences that are accessible and reliable to people with disabilities? In this talk, we’ll dive head-first into the mobile debate and reemerge informed on how we can use our skills as web developers to create brilliant mobile apps.",
+        "description": "SVG is awesome, but can be quite overwhelming at first glance. In this talk, Sara is going to introduce us to what’s possible in SVG, what tools we have at hand to help us, and how and why SVG can and should be a core part of every web developer’s knowledge stack.",
+        "bio": "",
+        "links": [],
+        "slides": "",
+        "audio": "",
+        "video": ""
+      },
+
+      {
+        "duration": 40,
+        "title": "Code Calligrams",
+        "speaker": {
+          "name": "",
+          "twitter": "",
+          "photo": ""
+        },
+        "description": "How do we draw new worlds, using nothing else than the languages of the Web?",
+        "bio": "",
+        "links": [],
+        "slides": "",
+        "audio": "",
+        "video": ""
+      },
+      {
+        "duration": 40,
+        "title": "Operations: a developer's guide",
+        "speaker": {
+          "name": "",
+          "twitter": "",
+          "photo": ""
+        },
+        "description": "An introduction to the web ops skills that will help you be a better developer. What you need to know about virtualisation, containerisation and wrangling servers, and some tools we use that might make development easier. I spent two years on the infrastructure team so you don't have to!",
         "bio": "",
         "links": [],
         "slides": false,
         "audio": "",
         "video": ""
       },
+
+
       {
         "duration": 40,
         "title": "Talk about Everything",
@@ -141,107 +174,32 @@
       },
       {
         "duration": 40,
-        "title": "Practical(ly awesome) SVG",
+        "title": "How to win at mobile accessibility",
         "speaker": {
           "name": "",
           "twitter": "",
           "photo": ""
         },
-        "description": "SVG is awesome, but can be quite overwhelming at first glance. In this talk, Sara is going to introduce us to what’s possible in SVG, what tools we have at hand to help us, and how and why SVG can and should be a core part of every web developer’s knowledge stack.",
+        "description": "The mobile web-vs-native debate rages on–who’s winning? How can we create mobile experiences that are accessible and reliable to people with disabilities? In this talk, we’ll dive head-first into the mobile debate and reemerge informed on how we can use our skills as web developers to create brilliant mobile apps.",
         "bio": "",
         "links": [],
-        "slides": "",
+        "slides": false,
         "audio": "",
         "video": ""
       },
-      {
-        "duration": 40,
-        "title": "Code Calligrams",
-        "speaker": {
-          "name": "",
-          "twitter": "",
-          "photo": ""
-        },
-        "description": "How do we draw new worlds, using nothing else than the languages of the Web?",
-        "bio": "",
-        "links": [],
-        "slides": "",
-        "audio": "",
-        "video": ""
-      },
+
       {
         "break": true,
         "duration": 90,
         "title": "Lunch break (90 mins)"
       },
       {
-        "duration": 40,
-        "title": "Operations: a developer's guide",
-        "speaker": {
-          "name": "",
-          "twitter": "",
-          "photo": ""
-        },
-        "description": "An introduction to the web ops skills that will help you be a better developer. What you need to know about virtualisation, containerisation and wrangling servers, and some tools we use that might make development easier. I spent two years on the infrastructure team so you don't have to!",
-        "bio": "",
-        "links": [],
-        "slides": false,
-        "audio": "",
-        "video": ""
-      },
-
-      {
-        "duration": 40,
-        "title": "A Single Page Story",
-        "speaker": {
-          "name": "Henrik Joreteg",
-          "twitter": "HenrikJoreteg",
-          "photo": "henrik.jpg"
-        },
-        "description": "Single page apps have become a legitimate part of the web, but what role should they play? Where do they shine? Where do they fail? How should we think about them and how can we evaluate tools for building them? We will opine on the tradeoffs of abstractions and frameworks and share &yet's impetus for creating Ampersand.js.",
-        "bio": "",
-        "links": [],
-        "slides": "https://speakerdeck.com/henrikjoreteg/ffconf-dot-org",
-        "audio": "http://media.ffconf.org/2014/6-henrick.mp3",
-        "video": "https://www.youtube.com/watch?v=hrAssE8meRo&index=6&list=PLXmT1r4krsTqrwW2jjXIXuCtFQ-5BIn-s"
-      },
-
-      {
         "break": true,
         "duration": 30,
         "title": "Cake break (30 mins)"
       },
 
-      {
-        "duration": 40,
-        "title": "Tools for the 21st century musician",
-        "speaker": {
-          "name": "Soledad Penadés",
-          "twitter": "supersole",
-          "photo": "sole.jpg"
-        },
-        "description": "In this talk we'll learn how Web Audio works and how we can use it to design and play sounds with incredible accuracy, which enables us to create our own real-time instruments and interactive experiences. We'll also identify the ferocious gotchas that are waiting to bite you when you least expect them, and gain valuable Web Audio debugging skills using Firefox's developer tools. At the end of the talk you'll be all set in your path to become 21st century music pioneers—or at least have a ton of creative fun!",
-        "bio": "",
-        "links": ["http://soledadpenades.com/"],
-        "slides": "http://soledadpenades.com/files/t/20141107_ffconf/",
-        "audio": "http://media.ffconf.org/2014/7-soledad.mp3",
-        "video": "https://www.youtube.com/watch?v=F0Iwvp_wtHE&index=7&list=PLXmT1r4krsTqrwW2jjXIXuCtFQ-5BIn-s"
-      },
-            {
-        "duration": 40,
-        "title": "Getting Close with the Web",
-        "speaker": {
-          "name": "Ben Foxall",
-          "twitter": "benjaminbenben",
-          "photo": "ben.jpg"
-        },
-        "description": "The web platform allows us to interact with people on the other side of the planet, but in what other ways can we use it when our devices are right next to each other?",
-        "bio": "",
-        "links": [],
-        "slides": false,
-        "audio": "http://media.ffconf.org/2014/8-ben.mp3",
-        "video": "https://www.youtube.com/watch?v=NdeJYeFvHnM&index=8&list=PLXmT1r4krsTqrwW2jjXIXuCtFQ-5BIn-s"
-      },
+
 
       {
         "break": true,
@@ -301,54 +259,8 @@
           "description": "Using the tools you know to debug tiny machines"
         }
       ],
-      "description": "Sure, you've moved past `alert` debugging and discovered console.log, but did you know you can replay XHR requests instead of having to repeat your steps to make the request? Or that you can proxy your local server through a browser configuration so your mobile phone can see it? This workshop is dedicated to learning the native developer tools baked in to the browser to make our life a little more bearable.",
+      "description": "Sure, you've moved past \"alert\" debugging and discovered console.log, but did you know you can replay XHR requests instead of having to repeat your steps to make the request? Or that you can proxy your local server through a browser configuration so your mobile phone can see it? This workshop is dedicated to learning the native developer tools baked in to the browser to make our life a little more bearable.",
       "extendedDescription": "We will look at features of Chrome DevTools, what's available in Firefox debugging suite. We'll also look at remote mobile debugging using native tools and also look at the alternative tools where native support isn't available.\n\nThe workshop will mostly be about the foundation of debugging techniques, which apply way beyond just a single browser's debugger tool, but will raise your expectation of all web debugging environments."
-    },
-
-    {
-      "title": "Testing for Front End Ops",
-      "slug": "testing",
-      "ticket": {
-        "url": "https://leftlogic.stagehq.com/events/3032/booking/new",
-        "price": "425"
-      },
-
-      "details": {
-        "date": "5th Nov 2015",
-        "time": "09:00 — 17:00",
-        "venue": "The Lighthouse, Brighton"
-      },
-
-      "speaker": {
-        "name": "Brian LeRoux",
-        "twitter": "brianleroux",
-        "photo": "remy-devtools.jpg"
-      },
-
-      "topics" : [
-        {
-          "title": "Concepts",
-          "description": "Truthiness, performance, coverage & continuous integration"
-        },
-        {
-          "title": "API First! Testing HTTP Endpoints",
-          "description": "Local builds, TAP & Tape, Mocha & Chai"
-        },
-        {
-          "title": "Testing Front End JavaScript",
-          "description": "Browserify, ES6 modules, Browsers, Mobile devices and emulators"
-        },
-        {
-          "title": "Testing CSS and HTML",
-          "description": "Removing unused CSS, telemetry: load, paint, fps & automation"
-        },
-        {
-          "title": "Comprehensive",
-          "description": "Reporting, remote debugging, monitoring, security & integrity"
-        }
-      ],
-      "description": "Testing does not guarantee high quality software, however, it improves the chances in creating it. Testing verifies your software continues to work after a quick hack and gives you an easy escape hatch when it does not. Testing tells the world your code does the things you intend it to do building confidence in those whom will ultimately use it. Most importantly, testing builds your own confidence as you progress into your problem domain.",
-      "extendedDescription": "Professionally developed and maintained codebases have tests and run them continuously. Organizations adopting software rightfully expect a test suite and often will want to run it themselves too. Organizations implementing code traditionally siloed quality assurance from development and often let the former slip in preference to a looming, oft artificial, deadline. And those projects usually failed.\n\nSoftware earned a reputation for failure but this is no longer a necessary risk. With modern advancements in testing, continuous integration and practicing continuous delivery you can mitigate technical challenges in releasing, creating value for your organization, and ultimately turning that value into tangible revenue.  These practice have evolved the simple web developer into a dangerously powerful new superhuman role known as Front End Ops.\n\nMitigating downtime due to a JavaScript error is the quiet achievement of Front End Ops but there is a more compelling story. You can measure the value you are creating and you can adjust the targets to improve it. A simple performance test that catches a regression in page load. Page load very often translates directly to revenue. Discovering an optimization that will translate to direct revenue earnings is a very convincing bullet point when asking for your next raise."
     }
   ]
 }
