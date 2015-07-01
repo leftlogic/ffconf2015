@@ -2,9 +2,13 @@
    ========================================================================== */
 // @import "fixedsticky";
 $svgwidth: 1150px;
+$svgheight: 349px;
 
-.masthead {
-  margin-bottom: 349px;
+.masthead { // this selector is here because it depends on the presence of the xwing
+  &.phase-0 {
+    margin-bottom: $svgheight;
+    margin-bottom: calc(100vh - #{$svgheight});
+  }
 }
 .xwing-wrapper {
   // overflow: hidden;
@@ -93,13 +97,13 @@ $svgwidth: 1150px;
 }
 
 
-.xwing-btn2 {
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-  -webkit-transition: all 1s;
-          transition: all 1s;
-}
-.xwing-btn2-rotate {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
+// .xwing-btn2 {
+//   -webkit-transform-origin: 50% 50%;
+//           transform-origin: 50% 50%;
+//   -webkit-transition: all 1s;
+//           transition: all 1s;
+// }
+// .xwing-btn2-rotate {
+//   -webkit-transform: rotate(45deg);
+//           transform: rotate(45deg);
+// }
