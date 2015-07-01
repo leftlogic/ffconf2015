@@ -149,14 +149,20 @@ h2, h3 {
     stroke: $c-yellow;
   }
 }
+.no-svg .logo-wrapper {
+  height: 386px;
+  max-width: none;
+  width: 418px;
+}
 .logo {
   margin: 40px auto;
-  max-width: 306px;
-  width: 50%;
+  // max-width: 306px;
+  // width: 50%;
 
   span {
     background-image: url(../images/logo.png);
-    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    // background-size: 100% 100%;
     display: block;
     height: 0;
     overflow: hidden;

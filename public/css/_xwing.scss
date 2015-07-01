@@ -9,7 +9,12 @@ $svgheight: 349px;
     margin-bottom: $svgheight;
     margin-bottom: calc(100vh - #{$svgheight});
   }
+
+  .no-svg & {
+    margin-bottom: 0;
+  }
 }
+
 .xwing-wrapper {
   // overflow: hidden;
   width: 100%;
