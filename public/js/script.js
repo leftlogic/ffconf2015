@@ -1,3 +1,4 @@
+/* global confDay */
 // Scroll to session
 (function() {
   var $ = function (s) {
