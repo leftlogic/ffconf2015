@@ -30,13 +30,10 @@ Frame.prototype = {
     var x = (w / 2 - w/2*scale);
     var y = (height / 2 - height/2*scale*2.1);
 
-    ctx.beginPath();
     ctx.moveTo(x, y);
     ctx.lineTo(x, y + h*scale);
     ctx.lineTo(x + width*scale, y + h*scale);
     ctx.lineTo(x + width*scale, y);
-    ctx.stroke();
-    ctx.closePath();
   },
   update: function () {
     this.pos = this.pos * this.speed;
@@ -96,7 +93,7 @@ function text() {
   var d = Date.parse('2015-07-15T11:00:00.000Z');
   var t = pad(((d - Date.now()) / 1000).toFixed(0), 8);
   var textWidth = ctx.measureText(t+'');
-  ctx.fillText(t, width/2 - textWidth.width/2, 20);
+  ctx.fillText(t, width/2 - textWidth.width/2, 15);
 }
 
 function paintToBack() {
@@ -148,14 +145,18 @@ function draw(elapsedTime) {
     }
   }
 
+  ctx.beginPath();
   for (i = 0; i < boxes.length; i++) {
     boxes[i].draw();
   }
+  ctx.closePath();
+  ctx.stroke();
 }
 
 ctx.imageSmoothingEnabled = false;
 init();
 paintToBack();
+ctx.font = '10px OCR-A';
 ctx.fillStyle = '#FFEB3B';
 ctx.lineWidth = 2;
 draw();
