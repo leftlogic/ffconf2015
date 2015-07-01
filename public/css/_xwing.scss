@@ -15,6 +15,14 @@ $svgheight: 349px;
   }
 }
 
+#countdown {
+  bottom: 0;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate3d(-50%, -20px, 0);
+          transform: translate3d(-50%, -20px, 0);
+}
+
 .xwing-wrapper {
   // overflow: hidden;
   width: 100%;
