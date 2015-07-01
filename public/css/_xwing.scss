@@ -31,7 +31,7 @@ $svgheight: 349px;
   // https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events
   pointer-events: none;
   position: fixed;
-  transform: translateZ(0);
+  // transform: translateZ(0);
 
   svg {
     bottom: 0;

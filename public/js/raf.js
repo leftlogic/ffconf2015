@@ -32,7 +32,7 @@ var raf = (function () {
 
   function clearQueue(time) {
     window.requestAnimationFrame(clearQueue);
-    if (!queue.length) {
+    if (!queue.length || !raf.running) {
       return;
     }
 
@@ -46,7 +46,9 @@ var raf = (function () {
 
   clearQueue();
 
-  return function raf(fn) {
+  var raf = function raf(fn) {
     queue.push(fn);
   };
+  raf.running = true;
+  return raf;
 })();
