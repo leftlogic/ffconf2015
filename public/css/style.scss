@@ -344,11 +344,15 @@ a.tickets-button {
 .no-svg .left-logic {
   background-image: url(../images/left-logic.png);
   background-position: top;
+  background-repeat: no-repeat;
   background-size: 113px 23px;
   border-bottom: 0 none;
   overflow: hidden;
   display: block;
   text-indent: -200%;
+  height: 91px;
+  margin: 0 auto;
+  width: 414px;
 }
 
 
