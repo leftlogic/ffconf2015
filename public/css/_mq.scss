@@ -2,6 +2,15 @@
    ========================================================================== */
 @include mq-min-check(320px) {
   .masthead,
+  .xwing {
+    will-change: transform;
+  }
+
+  .xwing-wrapper {
+    transform: scale(0.75) translateY(60px)
+  }
+
+  .masthead,
   .main,
   .footer {
     padding: 20px;
@@ -47,6 +56,9 @@
 
 
 @include mq-min-check(640px) {
+  .xwing-wrapper {
+    transform: scale(1) translateY(0);
+  }
   .masthead,
   .main,
   .footer {
@@ -105,7 +117,7 @@
   .location-title {
     font-size: 30px;
   }
-  
+
 
   .session-speaker-img-wrapper {
     display: block;

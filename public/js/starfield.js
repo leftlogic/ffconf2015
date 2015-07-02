@@ -165,7 +165,7 @@ StarField.prototype._renderStarField = function() {
             2, 2);
     }
     this.canvas.closePath();
-    this.canvas.fillStyle = "rgba(200, 200, 200, 0.9)";
+    this.canvas.fillStyle = "rgba(200, 200, 200, 0.4)";
     this.canvas.fill();
 
 };

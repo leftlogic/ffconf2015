@@ -7,7 +7,7 @@
     "analytics": "UA-1656750-37",
     "id": "ffconf-2015",
     "ticketPrice": "160",
-    "ticketUrl" : "http://leftlogic.stagehq.com",
+    "ticketUrl" : "",
     "source": "https://github.com/leftlogic/ffconf2015",
     "config": {
       "phase": 0.5,
