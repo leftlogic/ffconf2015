@@ -33,54 +33,6 @@
   }
 }());
 
-(function (global) {
-  'use strict';
-  var guid = 0;
-  var lookup = {};
-
-  function timer(repeat, fn, delay) {
-    guid++;
-
-    var args = [].slice.call(arguments, 3); // get the fn args
-    var prevFrameTime = window.performance.now();
-    var id = guid;
-
-    function update(elapsedTime) {
-      var timeSinceLastFrame = elapsedTime - (prevFrameTime || 0);
-
-      if (repeat) {
-        lookup[id] = raf(update);
-      }
-
-      if (timeSinceLastFrame < delay && prevFrameTime) {
-        return;
-      }
-
-      fn.apply(global, args);
-    }
-
-    raf(update);
-
-    return id;
-  }
-
-  window.setTimeout = function () {
-    var args = [].slice.call(arguments, 0);
-    return timer.apply(global, [false].concat(args));
-  };
-
-  window.setInterval = function () {
-    var args = [].slice.call(arguments, 0);
-    return timer.apply(global, [true].concat(args));
-  };
-
-  window.clearInterval = window.clearTimeout = function (id) {
-    raf.cancel(id);
-  };
-
-})(this);
-
-
 var raf = (function () {
   'use strict';
   var queue = [];

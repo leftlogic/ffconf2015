@@ -77,8 +77,10 @@ var BigBang = {
     getRandomPosition: function(minX, minY, maxX, maxY) {
       var angle = Math.random() * 360 * Math.PI / 180;
         return {
-            x: (Math.sin(angle) * minX + minX),
-            y: (Math.cos(angle) * minY + minY)
+            x: Math.floor((Math.random() * maxX) + minX),
+            y: Math.floor((Math.random() * maxY) + minY),
+            // x: (Math.sin(angle) * maxX + minX),
+            // y: (Math.cos(angle) * maxY + minY)
         };
     }
 };
@@ -126,7 +128,7 @@ StarField.prototype._updateStarField = function() {
                 -this.width / 10, -this.height / 10,
                    this.width / 5, this.height / 5
             );
-            star.resetPosition(randomLoc.x, randomLoc.y, absoluteMaxSpeed); // this.maxStarSpeed
+            // star.resetPosition(randomLoc.x, randomLoc.y, absoluteMaxSpeed); // this.maxStarSpeed
         }
     }
 };
@@ -143,27 +145,27 @@ StarField.prototype._renderStarField = function() {
     this.canvas.fillStyle = "rgba(0, 0, 0, .5)";
     this.canvas.fillRect(0, 0, this.width, this.height);
 
-    var grouping = this.numStars / 25 | 0;
+    var grouping = this.numStars / 10 | 0;
 
     var o = []
     // Stars
     this.canvas.beginPath();
     for (i = 0; i < this.numStars; i++) {
         star = this.starField[i];
-        if (i % grouping === 0) {
-          this.canvas.closePath();
-          this.canvas.fillStyle = "rgba(200, 200, 200, " + star.opacity + ")";
-          o.push(star.opacity);
-          this.canvas.fill();
-          this.canvas.beginPath();
-        }
+        // if (i % grouping === 0) {
+        //   this.canvas.closePath();
+        //   this.canvas.fillStyle = "rgba(200, 200, 200, " + star.opacity + ")";
+        //   o.push(star.opacity);
+        //   this.canvas.fill();
+        //   this.canvas.beginPath();
+        // }
         this.canvas.rect(
             star.x + this.width / 2,
             star.y + this.height / 2,
             2, 2);
     }
     this.canvas.closePath();
-    this.canvas.fillStyle = "rgba(200, 200, 200, " + this.starField.slice(-1)[0].opacity + ")";
+    this.canvas.fillStyle = "rgba(200, 200, 200, 0.9)";
     this.canvas.fill();
 
 };
