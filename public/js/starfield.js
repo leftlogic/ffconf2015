@@ -75,9 +75,10 @@ var BigBang = {
      * @return {Object} An object with random {x, y} positions
      */
     getRandomPosition: function(minX, minY, maxX, maxY) {
+      var angle = Math.random() * 360 * Math.PI / 180;
         return {
-            x: Math.floor((Math.random() * maxX) + minX),
-            y: Math.floor((Math.random() * maxY) + minY)
+            x: (Math.sin(angle) * minX + minX),
+            y: (Math.cos(angle) * minY + minY)
         };
     }
 };
@@ -141,15 +142,30 @@ StarField.prototype._renderStarField = function() {
     // Background
     this.canvas.fillStyle = "rgba(0, 0, 0, .5)";
     this.canvas.fillRect(0, 0, this.width, this.height);
+
+    var grouping = this.numStars / 25 | 0;
+
+    var o = []
     // Stars
+    this.canvas.beginPath();
     for (i = 0; i < this.numStars; i++) {
         star = this.starField[i];
-        this.canvas.fillStyle = "rgba(200, 200, 200, " + star.opacity + ")";
-        this.canvas.fillRect(
+        if (i % grouping === 0) {
+          this.canvas.closePath();
+          this.canvas.fillStyle = "rgba(200, 200, 200, " + star.opacity + ")";
+          o.push(star.opacity);
+          this.canvas.fill();
+          this.canvas.beginPath();
+        }
+        this.canvas.rect(
             star.x + this.width / 2,
             star.y + this.height / 2,
             2, 2);
     }
+    this.canvas.closePath();
+    this.canvas.fillStyle = "rgba(200, 200, 200, " + this.starField.slice(-1)[0].opacity + ")";
+    this.canvas.fill();
+
 };
 
 /**
@@ -242,10 +258,10 @@ setTimeout(function () {
   var slow = function () {
     var maxSpeed = stars.maxStarSpeed *= .8;
     var i = 0, length = stars.starField.length;
-
+    var brk = false;
     if (maxSpeed > .05) {
       for (; i < length; i++) {
-        stars.starField[i].speed = Math.max(Math.random() * maxSpeed, absoluteMaxSpeed)
+        stars.starField[i].speed = Math.max(Math.random() * maxSpeed, absoluteMaxSpeed);
       }
       window.raf(slow);
     }

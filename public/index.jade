@@ -68,7 +68,7 @@ html(id=id)
       div#xwing.xwing-wrapper.fixedsticky
         include _partials/xwing
         if config.phase < 1
-          canvas#countdown
+          include _partials/countdown
 
       div#bottom.wrapper-bottom
         include _partials/sponsors
@@ -80,7 +80,7 @@ html(id=id)
     //- script(src='/js/fixedsticky.js')
     //- script(src='/js/jquery.waypoints.min.js')
     script(src='/js/raf.js')
-    script(src='/js/countdown.js')
+    //- script(src='/js/countdown.js')
     script(src='/js/starfield.js')
     script(src='/js/script.js')
     <!--<![endif]-->

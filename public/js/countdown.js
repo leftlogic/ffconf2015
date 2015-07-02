@@ -4,7 +4,16 @@ var c = document.getElementById('countdown'),
     ctx = c.getContext('2d'),
     width = 200,
     height = 100,
-    RAD = Math.PI / 180;
+    RAD = Math.PI / 180,
+    audio = new Audio();
+
+audio.src = '/images/stay-on-target.mp3';
+c.onclick = function () {
+  try {
+    audio.play();
+    audio.currentTime = 0;
+  } catch (e) {}
+}
 
 c.width = width;
 var hw = width/2;

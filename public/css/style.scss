@@ -101,7 +101,7 @@ h2, h3 {
 }
 .wrapper-bottom {
   background: $c-grey-bg;
-  box-shadow: 0 0 20px 10px rgba(0,0,0,.5);
+  // box-shadow: 0 0 20px 10px rgba(0,0,0,.5);
   font-family: Steelfish, Verdana;
   font-size: 20px;
   letter-spacing: 2px;
@@ -371,7 +371,7 @@ a.tickets-button {
    ========================================================================== */
 .fullscreen {
   height: 100%;
-  position: fixed;
+  position: absolute;
   width: 100%;
   z-index: 0;
 }
