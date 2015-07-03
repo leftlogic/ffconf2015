@@ -9,7 +9,7 @@
           "url": "http://www.picturehouses.co.uk/cinema/Duke_Of_Yorks/"
         },
         {
-          "name": "The Lighthouse",
+          "name": "Lighthouse",
           "detail": "Workshops",
           "url": "http://goo.gl/maps/GTYX"
         },
@@ -19,9 +19,9 @@
           "url": "http://goo.gl/maps/6FH8"
         },
         {
-          "name": "The Loft",
+          "name": "TBA",
           "detail": "After Party",
-          "url": "http://goo.gl/maps/xe61"
+          ":url": "http://goo.gl/maps/xe61"
         }
       ]
     },
@@ -33,7 +33,7 @@
           "url": "http://brightonhotels.jurysinns.com/",
           "detail": "from £64",
           "extra": "next to Train station & close to venue",
-          "extra-discount": "quote \"Left Logic\" for the discount"
+          ":extra-discount": "quote \"Left Logic\" for the discount"
         },
         {
           "name": "Travellodge",
@@ -43,7 +43,7 @@
         {
           "name": "My Hotel",
           "url": "http://www.myhotels.com/my-hotel-brighton/index.html",
-          "detail": "from £80",
+          "detail": "from £90",
           "extra": "standard and superior respectively"
         },
         {
@@ -59,7 +59,7 @@
       "location": [
         {"name": "Bardsley's", "detail": "fish 'n chips", "url": "http://www.bardsleys-fishandchips.co.uk/map"},
         {"name": "The Open House", "detail": "good pub food", "url": "http://goo.gl/maps/eZPV8"},
-        {"name": "Circus Circus", "detail": "pub serving Thai food", "url": "http://goo.gl/VNUwb"},
+        {"name": "The Joker", "detail": "wings & salt beef", "url": "http://goo.gl/VNUwb"},
         {"name": "La Choza", "detail": "mexican street food", "url": "http://www.hareandhoundsbrighton.com/"}
       ]
     }
@@ -228,7 +228,7 @@
       "details": {
         "date": "5th Nov 2015",
         "time": "09:00 — 17:00",
-        "venue": "The Lighthouse, Brighton"
+        "venue": "Lighthouse, Brighton"
       },
 
       "speaker": {
