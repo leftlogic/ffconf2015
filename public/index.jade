@@ -1,0 +1,86 @@
+doctype
+html(id=id)
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes')
+    meta(name='description', content=siteDescription)
+    meta(name='format-detection', content='telephone=no')
+
+    title= siteTitle
+
+    link(rel='icon', href='/favicon.png')
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='all-the-source', href=source)
+    link(rel='author', href='/humans.txt')
+
+    <!--[if lt IE 9]>
+    script(src='/js/html5shiv.min.js')
+    //- link(rel='stylesheet', href='/css/ltie9.css')
+    <![endif]-->
+
+    if environment == "production"
+      script.
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','#{analytics}','auto');ga('send','pageview');
+
+    script.
+      var confDay = new Date('#{date}');
+      // SVG support
+      function supportsSVG() {
+        return !! document.createElementNS && !! document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect;
+      }
+      if (!supportsSVG()) {
+        document.documentElement.className += ' no-svg';
+      }
+      // Is Safari?
+      if (/constructor/i.test(window.HTMLElement)) {
+        document.documentElement.className += ' i-hate-safari';
+      }
+
+  - var completeDate = moment(date + ' ' + startTime)
+    script(src='/js/fonts.js')
+
+  body
+
+    include js/formatting
+    include js/markdown
+
+    div#fullScreen.fullscreen
+      canvas#canvas2d
+
+    div.page-wrapper
+      include _partials/header
+
+      if config.phase >= 0.5
+        include _partials/sessions
+
+      if config.phase >= 0.5
+        include _partials/workshops
+
+      if config.phase >= 0.5
+        include _partials/locations
+
+      div#xwing.xwing-wrapper.fixedsticky
+        include _partials/xwing
+        if config.phase < 1
+          include _partials/countdown
+
+      div#bottom.wrapper-bottom
+        include _partials/sponsors
+        include _partials/footer
+
+    <!--[if gt IE 8]><!-->
+    //- script(src='/js/jquery-2.1.4.min.js')
+    //- script(src='/js/fixedfixed.js')
+    //- script(src='/js/fixedsticky.js')
+    //- script(src='/js/jquery.waypoints.min.js')
+    script(src='/js/raf.js')
+    script(src='/js/countdown.js')
+    script(src='/js/starfield.js')
+    script(src='/js/script.js')
+    <!--<![endif]-->

@@ -8,12 +8,13 @@
  * @param  {number} x
  * @param  {number} y
  */
+var absoluteMaxSpeed = 0.01;
 var Star = function(x, y, maxSpeed) {
     this.x = x;
     this.y = y;
     this.slope = y / x; // This only works because our origin is always (0,0)
     this.opacity = 0;
-    this.speed = Math.max(Math.random() * maxSpeed, 1);
+    this.speed = Math.max(Math.random() * maxSpeed, absoluteMaxSpeed);
 };
 
 /**
@@ -74,9 +75,12 @@ var BigBang = {
      * @return {Object} An object with random {x, y} positions
      */
     getRandomPosition: function(minX, minY, maxX, maxY) {
+      var angle = Math.random() * 360 * Math.PI / 180;
         return {
             x: Math.floor((Math.random() * maxX) + minX),
-            y: Math.floor((Math.random() * maxY) + minY)
+            y: Math.floor((Math.random() * maxY) + minY),
+            // x: (Math.sin(angle) * maxX + minX),
+            // y: (Math.cos(angle) * maxY + minY)
         };
     }
 };
@@ -120,15 +124,11 @@ StarField.prototype._updateStarField = function() {
         // Recycle star obj if it goes out of the frame
         if ((Math.abs(star.x) > this.width / 2) ||
             (Math.abs(star.y) > this.height / 2)) {
-            //randomLoc = BigBang.getRandomPosition(
-            //    -this.width / 2, -this.height / 2,
-            //       this.width, this.height
-            //);
             randomLoc = BigBang.getRandomPosition(
                 -this.width / 10, -this.height / 10,
                    this.width / 5, this.height / 5
             );
-            star.resetPosition(randomLoc.x, randomLoc.y, this.maxStarSpeed);
+            // star.resetPosition(randomLoc.x, randomLoc.y, absoluteMaxSpeed); // this.maxStarSpeed
         }
     }
 };
@@ -144,15 +144,30 @@ StarField.prototype._renderStarField = function() {
     // Background
     this.canvas.fillStyle = "rgba(0, 0, 0, .5)";
     this.canvas.fillRect(0, 0, this.width, this.height);
+
+    var grouping = this.numStars / 10 | 0;
+
+    var o = []
     // Stars
+    this.canvas.beginPath();
     for (i = 0; i < this.numStars; i++) {
         star = this.starField[i];
-        this.canvas.fillStyle = "rgba(200, 200, 200, " + star.opacity + ")";
-        this.canvas.fillRect(
+        // if (i % grouping === 0) {
+        //   this.canvas.closePath();
+        //   this.canvas.fillStyle = "rgba(200, 200, 200, " + star.opacity + ")";
+        //   o.push(star.opacity);
+        //   this.canvas.fill();
+        //   this.canvas.beginPath();
+        // }
+        this.canvas.rect(
             star.x + this.width / 2,
             star.y + this.height / 2,
             2, 2);
     }
+    this.canvas.closePath();
+    this.canvas.fillStyle = "rgba(200, 200, 200, 0.4)";
+    this.canvas.fill();
+
 };
 
 /**
@@ -162,7 +177,7 @@ StarField.prototype._renderStarField = function() {
 StarField.prototype._renderFrame = function(elapsedTime) {
     var timeSinceLastFrame = elapsedTime - (this.prevFrameTime || 0);
 
-    window.requestAnimationFrame(this._renderFrame.bind(this));
+    window.raf(this._renderFrame.bind(this));
 
     // Skip frames unless at least 30ms have passed since the last one
     // (Cap to ~30fps)
@@ -191,7 +206,7 @@ StarField.prototype._watchCanvasSize = function(elapsedTime) {
         width,
         height;
 
-    window.requestAnimationFrame(this._watchCanvasSize.bind(this));
+    // window.raf(this._watchCanvasSize.bind(this));
 
     // Skip frames unless at least 333ms have passed since the last check
     // (Cap to ~3fps)
@@ -221,8 +236,8 @@ StarField.prototype._initScene = function(numStars) {
     }
 
     // Intervals not stored because I don't plan to detach them later...
-    window.requestAnimationFrame(this._renderFrame.bind(this));
-    window.requestAnimationFrame(this._watchCanvasSize.bind(this));
+    window.raf(this._renderFrame.bind(this));
+    window.raf(this._watchCanvasSize.bind(this));
 };
 
 /**
@@ -237,35 +252,6 @@ StarField.prototype.render = function(numStars, maxStarSpeed) {
     this._initScene(this.numStars);
 };
 
-/**
- * requestAnimationFrame shim layer with setTimeout fallback
- * @see http://paulirish.com/2011/requestanimationframe-for-smart-animating
- */
-(function() {
-    var lastTime = 0;
-    var vendors = ['ms', 'moz', 'webkit', 'o'];
-    for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
-        window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
-        window.cancelAnimationFrame =
-          window[vendors[x]+'CancelAnimationFrame'] || window[vendors[x]+'CancelRequestAnimationFrame'];
-    }
-
-    if (!window.requestAnimationFrame)
-        window.requestAnimationFrame = function(callback, element) {
-            var currTime = new Date().getTime();
-            var timeToCall = Math.max(0, 16 - (currTime - lastTime));
-            var id = window.setTimeout(function() { callback(currTime + timeToCall); },
-              timeToCall);
-            lastTime = currTime + timeToCall;
-            return id;
-        };
-
-    if (!window.cancelAnimationFrame)
-        window.cancelAnimationFrame = function(id) {
-            clearTimeout(id);
-        };
-}());
-
 // Kick off!
 var stars = new StarField('fullScreen');
 stars.render(256, 20);
@@ -274,12 +260,12 @@ setTimeout(function () {
   var slow = function () {
     var maxSpeed = stars.maxStarSpeed *= .8;
     var i = 0, length = stars.starField.length;
-
-    if (maxSpeed > .005) {
+    var brk = false;
+    if (maxSpeed > .05) {
       for (; i < length; i++) {
-        stars.starField[i].speed = Math.max(Math.random() * maxSpeed, 1)
+        stars.starField[i].speed = Math.max(Math.random() * maxSpeed, absoluteMaxSpeed);
       }
-      requestAnimationFrame(slow);
+      window.raf(slow);
     }
   }
   slow();

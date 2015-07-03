@@ -1,0 +1,266 @@
+{
+  "locations": [
+    {
+      "type": "Venues",
+      "location": [
+        {
+          "name": "Duke of Yorks",
+          "detail": "Conference",
+          "url": "http://www.picturehouses.co.uk/cinema/Duke_Of_Yorks/"
+        },
+        {
+          "name": "Lighthouse",
+          "detail": "Workshops",
+          "url": "http://goo.gl/maps/GTYX"
+        },
+        {
+          "name": "The Fountainhead",
+          "detail": "Pre Party",
+          "url": "http://goo.gl/maps/6FH8"
+        },
+        {
+          "name": "TBA",
+          "detail": "After Party",
+          ":url": "http://goo.gl/maps/xe61"
+        }
+      ]
+    },
+    {
+      "type": "Hotels",
+      "location": [
+        {
+          "name": "Jury's Inn",
+          "url": "http://brightonhotels.jurysinns.com/",
+          "detail": "from £64",
+          "extra": "next to Train station & close to venue",
+          ":extra-discount": "quote \"Left Logic\" for the discount"
+        },
+        {
+          "name": "Travellodge",
+          "url": "http://www.travelodge.co.uk/hotels/18/Brighton-hotel",
+          "detail": "from £28"
+        },
+        {
+          "name": "My Hotel",
+          "url": "http://www.myhotels.com/my-hotel-brighton/index.html",
+          "detail": "from £90",
+          "extra": "standard and superior respectively"
+        },
+        {
+          "name": "Old Ship Hotel",
+          "url": "http://www.thehotelcollection.co.uk/hotels/old-ship-brighton-hotel/",
+          "detail": "from £82",
+          "extra": "close to after party venue"
+        }
+      ]
+    },
+    {
+      "type": "Food/Drink",
+      "location": [
+        {"name": "Bardsley's", "detail": "fish 'n chips", "url": "http://www.bardsleys-fishandchips.co.uk/map"},
+        {"name": "The Open House", "detail": "good pub food", "url": "http://goo.gl/maps/eZPV8"},
+        {"name": "The Joker", "detail": "wings & salt beef", "url": "http://goo.gl/VNUwb"},
+        {"name": "La Choza", "detail": "mexican street food", "url": "http://www.hareandhoundsbrighton.com/"}
+      ]
+    }
+  ],
+  "sponsors": {
+    "gold": [
+      {
+        "name": "Google Chrome",
+        "url": "https://developers.google.com/live/chrome/",
+        "img": "chrome.png"
+      }
+    ],
+    "silver": [
+      {
+        "name": "brandwatch",
+        "url": "http://www.brandwatch.com/",
+        "img": "brandwatch.png"
+      }
+    ],
+    "bronze": [
+      {
+        "name": "Confwall",
+        "url": "https://confwall.com/?utm_source=ff2015-site&utm_medium=sponsor&utm_campaign=ff2015-site",
+        "img": "confwall.png"
+      },
+      {
+        "name": "potato",
+        "url": "https://p.ota.to/",
+        "img": "potato.png"
+      }
+    ]
+  },
+  "sessions": {
+    "sessions": [
+      {
+        "break": true,
+        "title": "Registration",
+        "duration": 40
+      },
+      {
+        "break": true,
+        "title": "Opening remarks",
+        "duration": 10
+      },
+      {
+        "duration": 40,
+        "title": "Practical(ly awesome) SVG",
+        "speaker": {
+          "name": "",
+          "twitter": "",
+          "photo": ""
+        },
+        "description": "SVG is awesome, but can be quite overwhelming at first glance. In this talk, Sara is going to introduce us to what’s possible in SVG, what tools we have at hand to help us, and how and why SVG can and should be a core part of every web developer’s knowledge stack.",
+        "bio": "",
+        "links": [],
+        "slides": "",
+        "audio": "",
+        "video": ""
+      },
+
+      {
+        "duration": 40,
+        "title": "Code Calligrams",
+        "speaker": {
+          "name": "",
+          "twitter": "",
+          "photo": ""
+        },
+        "description": "How do we draw new worlds, using nothing else than the languages of the Web?",
+        "bio": "",
+        "links": [],
+        "slides": "",
+        "audio": "",
+        "video": ""
+      },
+      {
+        "duration": 40,
+        "title": "Operations: a developer's guide",
+        "speaker": {
+          "name": "",
+          "twitter": "",
+          "photo": ""
+        },
+        "description": "An introduction to the web ops skills that will help you be a better developer. What you need to know about virtualisation, containerisation and wrangling servers, and some tools we use that might make development easier. I spent two years on the infrastructure team so you don't have to!",
+        "bio": "",
+        "links": [],
+        "slides": false,
+        "audio": "",
+        "video": ""
+      },
+
+
+      {
+        "duration": 40,
+        "title": "Talk about Everything",
+        "speaker": {
+          "name": "",
+          "twitter": "",
+          "photo": ""
+        },
+        "description": "Software influences the lives of billions of humans every day. As people working on it, we face a broad variety of challenges – and we have a responsibility towards each of these humans. Let's take a look at the status of software development today, and see what each of us can do to act according to this responsibility.",
+        "bio": "",
+        "links": [],
+        "slides": false,
+        "audio": "",
+        "video": ""
+      },
+      {
+        "break": true,
+        "title": "Coffee break (30 mins)",
+        "duration": 30
+      },
+      {
+        "duration": 40,
+        "title": "How to win at mobile accessibility",
+        "speaker": {
+          "name": "",
+          "twitter": "",
+          "photo": ""
+        },
+        "description": "The mobile web-vs-native debate rages on–who’s winning? How can we create mobile experiences that are accessible and reliable to people with disabilities? In this talk, we’ll dive head-first into the mobile debate and reemerge informed on how we can use our skills as web developers to create brilliant mobile apps.",
+        "bio": "",
+        "links": [],
+        "slides": false,
+        "audio": "",
+        "video": ""
+      },
+
+      {
+        "break": true,
+        "duration": 90,
+        "title": "Lunch break (90 mins)"
+      },
+      {
+        "break": true,
+        "duration": 30,
+        "title": "Cake break (30 mins)"
+      },
+
+
+
+      {
+        "break": true,
+        "duration": 20,
+        "title": "Closing remarks"
+      },
+      {
+        "break": true,
+        "start": "18:15",
+        "end": "Late",
+        "duration": 90,
+        "afterparty": true,
+        "title": "After Party"
+      }
+    ]
+  },
+  "workshops": [
+    {
+      "title": "Mastering browser devtools",
+      "slug": "debug-and-tools",
+      "ticket": {
+        "url": "",
+        "price": "425"
+      },
+
+      "details": {
+        "date": "5th Nov 2015",
+        "time": "09:00 — 17:00",
+        "venue": "Lighthouse, Brighton"
+      },
+
+      "speaker": {
+        "name": "Remy Sharp",
+        "twitter": "rem",
+        "photo": "remy-devtools.jpg"
+      },
+
+      "topics" : [
+        {
+          "title": "Console",
+          "description": "Power features beyond console.log"
+        },
+        {
+          "title": "Network",
+          "description": "What's slow, why and the detail behind a request"
+        },
+        {
+          "title": "Source",
+          "description": "How to make DevTools your development IDE"
+        },
+        {
+          "title": "Performance",
+          "description": "How to read and investigate rendering issues"
+        },
+        {
+          "title": "Mobile",
+          "description": "Using the tools you know to debug tiny machines"
+        }
+      ],
+      "description": "Sure, you've moved past \"alert\" debugging and discovered console.log, but did you know you can replay XHR requests instead of having to repeat your steps to make the request? Or that you can proxy your local server through a browser configuration so your mobile phone can see it? This workshop is dedicated to learning the native developer tools baked in to the browser to make our life a little more bearable.",
+      "extendedDescription": "We will look at features of Chrome DevTools, what's available in Firefox debugging suite. We'll also look at remote mobile debugging using native tools and also look at the alternative tools where native support isn't available.\n\nThe workshop will mostly be about the foundation of debugging techniques, which apply way beyond just a single browser's debugger tool, but will raise your expectation of all web debugging environments."
+    }
+  ]
+}
