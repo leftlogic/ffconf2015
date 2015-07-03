@@ -65,21 +65,21 @@
     }
   ],
   "sponsors": {
-    "full": [
+    "gold": [
       {
         "name": "Google Chrome",
         "url": "https://developers.google.com/live/chrome/",
         "img": "chrome.png"
       }
     ],
-    "half": [
+    "silver": [
       {
         "name": "brandwatch",
         "url": "http://www.brandwatch.com/",
         "img": "brandwatch.png"
       }
     ],
-    "small": [
+    "bronze": [
       {
         "name": "Confwall",
         "url": "https://confwall.com/?utm_source=ff2015-site&utm_medium=sponsor&utm_campaign=ff2015-site",
