@@ -310,18 +310,20 @@ a.tickets-button {
     height: 100%;
     padding: 10px;
     width: 100%;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
   }
 
   img {
     border: 0 none; // IE fix
-    display: block;
-    margin: 0 auto;
     max-height: 100%;
     max-width: 100%;
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    vertical-align: middle;
   }
 }
 .sponsor-title {
