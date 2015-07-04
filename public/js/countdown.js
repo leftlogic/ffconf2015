@@ -117,18 +117,8 @@ var tick = 0;
 
 var speed = 15;
 
-var prevFrameTime = 0;
 function draw(elapsedTime) {
-  var timeSinceLastFrame = elapsedTime - (prevFrameTime || 0);
-  window.raf(draw);
-
-  if (timeSinceLastFrame < 30 && prevFrameTime) {
-    return;
-  }
-
   tick++;
-
-  prevFrameTime = elapsedTime;
 
   ctx.clearRect(0,0,width,height);
 //   init();
@@ -170,5 +160,5 @@ paintToBack();
 ctx.font = '10px OCR-A';
 ctx.fillStyle = '#FFEB3B';
 ctx.lineWidth = 2;
-draw();
+window.raf.fps(draw, 30);
 })();

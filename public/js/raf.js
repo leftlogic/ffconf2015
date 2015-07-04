@@ -3,44 +3,49 @@
  * @see http://paulirish.com/2011/requestanimationframe-for-smart-animating
  * modified for use with raf shim and raf based setInterval/Timeout
  */
-(function() {
+(function(window, request, cancel) {
   'use strict';
   var lastTime = 0;
-  var setTimeout = window.setTimeout;
-  var clearTimeout = window.clearTimeout;
+  var strings = {
+    raf: 'requestAnimationFrame',
+    caf: 'cancelAnimationFrame',
+    af: 'AnimationFrame',
+  };
   var vendors = ['ms', 'moz', 'webkit', 'o'];
-  for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
-      window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
-      window.cancelAnimationFrame =
-        window[vendors[x]+'CancelAnimationFrame'] || window[vendors[x]+'CancelRequestAnimationFrame'];
+  for(var x = 0; x < vendors.length && !window[strings.raf]; ++x) {
+      window[strings.raf] = window[vendors[x]+'Request' + strings.af];
+      window[strings.caf] =
+        window[vendors[x]+'Cancel' + strings.af] || window[vendors[x]+'CancelRequest' + strings.af];
   }
 
-  if (!window.requestAnimationFrame) {
-      window.requestAnimationFrame = function(callback) {
+  if (!window[strings.raf]) {
+      window[strings.raf] = function(callback) {
           var currTime = new Date().getTime();
           var timeToCall = Math.max(0, 16 - (currTime - lastTime));
-          var id = setTimeout(function() { callback(currTime + timeToCall); },
+          var id = window.setTimeout(function() { callback(currTime + timeToCall); },
             timeToCall);
           lastTime = currTime + timeToCall;
           return id;
       };
   }
 
-  if (!window.cancelAnimationFrame) {
-    window.cancelAnimationFrame = function(id) {
-        clearTimeout(id);
+  if (!window[strings.caf]) {
+    window[strings.caf] = function(id) {
+        window.clearTimeout(id);
     };
   }
-}());
 
-var raf = (function () {
-  'use strict';
+  /* ^---------- end of polyfill, start of raf shim ------------> */
+
   var queue = [];
   var lookup = {};
   var guid = 0;
 
+  var _rAF = window[strings.raf];
+  var _cAF = window[strings.caf];
+
   function clearQueue(time) {
-    window.requestAnimationFrame(clearQueue);
+    _rAF(clearQueue);
     if (!queue.length || !raf.running) {
       return;
     }
@@ -85,5 +90,42 @@ var raf = (function () {
     return false;
   };
 
-  return raf;
-})();
+  raf.fps = function (fn, fps) {
+    var lastFrameTime = 0;
+    var ms = 1000 / fps;
+    function update(elapsedTime) {
+      // calculate the delta since the last frame
+      var delta = elapsedTime - (lastFrameTime || 0);
+
+      // queue up an rAF update call
+      raf(update);
+
+      // if we *don't* already have a first frame, and the
+      // delta is less than 33ms (30fps in this case) then
+      // don't do anything and return
+      if (lastFrameTime && delta < ms) {
+        return;
+      }
+      // else we have a frame we want to update at our fps...
+
+      // capture the last frame update time so we can work out
+      // a delta next time.
+      lastFrameTime = elapsedTime;
+
+      // now do the frame update and render work
+      fn(elapsedTime);
+    }
+    update();
+  };
+
+  if (cancel) {
+    window[cancel] = raf.cancel;
+  }
+
+  if (!request) {
+    request = 'raf';
+  }
+
+  window[request] = raf;
+
+})(window);
