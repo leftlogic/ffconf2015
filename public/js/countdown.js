@@ -7,13 +7,15 @@ var c = document.getElementById('countdown'),
     RAD = Math.PI / 180,
     audio = new Audio();
 
-audio.src = '/images/stay-on-target.mp3';
-c.onclick = function () {
-  try {
-    audio.play();
-    audio.currentTime = 0;
-  } catch (e) {}
-}
+window.addEventListener('load', function() {
+  audio.src = '/images/stay-on-target.mp3';
+  c.onclick = function () {
+    try {
+      audio.play();
+      audio.currentTime = 0;
+    } catch (e) {}
+  }
+});
 
 c.width = width;
 var hw = width/2;
