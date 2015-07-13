@@ -162,3 +162,56 @@ ctx.fillStyle = '#FFEB3B';
 ctx.lineWidth = 2;
 window.raf.fps(draw, 30);
 })();
+
+  function request(type, url, opts, callback) {
+  var xhr = new XMLHttpRequest(),
+      fd;
+
+  if (typeof opts === 'function') {
+    callback = opts;
+    opts = null;
+  }
+
+  xhr.open(type, url);
+
+  if (type === 'POST' && opts) {
+    fd = new FormData();
+
+    for (var key in opts) {
+      fd.append(key, JSON.stringify(opts[key]));
+    }
+  }
+
+  xhr.onerror = function () {
+    callback.call(xhr, new Error(xhr.status));
+  };
+
+  xhr.onload = function () {
+    callback.call(xhr, null, JSON.parse(xhr.response));
+  };
+
+  xhr.send(opts ? fd : null);
+}
+
+function liveYet(error, live) {
+  if (!live) {
+    setTimeout(request.bind(null, 'get', '/are-we-live-yet-or-wot?', liveYet), 1000);
+  } else {
+    window.location.reload();
+  }
+}
+
+function ping() {
+  var a = Date.parse('2015-07-15T11:00:00.000Z');
+  var b = Date.now();
+  if (a - b < (1000 * 60)) {
+    // start to request
+    return liveYet();
+  }
+
+  setTimeout(ping, (a - b)/2);
+}
+
+try {
+  ping();
+} catch (e) {};

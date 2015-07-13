@@ -189,6 +189,21 @@
       },
 
       {
+        "duration": 40,
+        "title": "You should use <insert library/framework>, it's the bestestest!",
+        "speaker": {
+          "name": "",
+          "twitter": "",
+          "photo": ""
+        },
+        "description": "\"You should use [insert library or framework here], it's the bestestest!\" is pretty standard modern web development chatter. But how do you separate the hype from the reality? Let's have a look at how we can gather data to assess the fit of code to your projects.",
+        "bio": "",
+        "links": [],
+        "slides": false,
+        "audio": "",
+        "video": ""
+      },
+      {
         "break": true,
         "duration": 90,
         "title": "Lunch break (90 mins)"
@@ -217,6 +232,49 @@
     ]
   },
   "workshops": [
+    {
+      "title": "Performance Matters",
+      "slug": "perfmatters",
+      "ticket": {
+        "url": "",
+        "price": "425"
+      },
+
+      "details": {
+        "date": "5th Nov 2015",
+        "time": "09:00 — 17:00",
+        "venue": "Lighthouse, Brighton"
+      },
+
+      "speaker": {
+        "name": "Paul Lewis",
+        "twitter": "aerotwist"
+      },
+
+      "description": "Performance is an integral part of any successful project. In fact, as the next billion people come online, performance will become increasingly important. Having a performant site isn't just about getting things to load quickly with concatentation, minification, and the critical rendering path, it's also about responding to the user's input quickly and efficiently; it's about smooth scrolling and timely animations. Ultimately it's about getting pixels onto the user's screen quickly and keeping things fast.",
+      "extendedDescription": "This workshop is going to take you on a deep dive through the pixel pipeline, from the initial page request through to pixels on the screen. We will stop at every point in the pipeline to focus on what tools we have our disposal, what the common bottlenecks are, and how we can go about fixing them.\n\nTowards the end of the day you'll have the opportunity to apply your knowledge to your own sites, and come away more confident of how to include performance and profiling in your day-to-day work.",
+      "topics": [
+        {
+          "title": "Choosing the right battles",
+        "description": "The performance landscape and learning what matters to your users."
+        },
+
+        {
+          "title": "The Critical Rendering Path",
+        "description": "Discover how the browser converts requests into pixels."
+        },
+
+        {
+          "title": "JavaScript",
+        "description": "How to schedule your JavaScript properly, and assess its performance impact."
+        },
+
+        {
+          "title": "Styles, Layout, Paint and Composite",
+          "description": "Learn how to work with the browser to make visual updates as performant as possible."
+        }
+      ]
+    },
     {
       "title": "Mastering browser devtools",
       "slug": "debug-and-tools",
