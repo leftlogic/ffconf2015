@@ -204,6 +204,36 @@
         "video": ""
       },
       {
+        "duration": 40,
+        "title": "JavaScript that doesn’t hurt your feelings",
+        "speaker": {
+          "name": "",
+          "twitter": "",
+          "photo": ""
+        },
+        "description": "JavaScript just had its 20th birthday this year and it has come a long way. But many fail to recognise this and still code like it’s 1999. This talk will take you through my favourite features of recent JavaScript editions, shows you how to use them in your project today and will give you an outlook of even better things to come.",
+        "bio": "",
+        "links": [],
+        "slides": false,
+        "audio": "",
+        "video": ""
+      },
+      {
+        "duration": 40,
+        "title": "The Web Audio Phenomenon that Shall Not Be Named",
+        "speaker": {
+          "name": "",
+          "twitter": "",
+          "photo": ""
+        },
+        "description": "Natural languages have many nooks and crannies, but there's a particular rabbit hole that will obsess you from the start. In this talk, you'll learn about the oddest psychological phenomenon ever to be thrown at getUserMedia and the odd parallels between learning human, natural languages and learning programming languages.",
+        "bio": "",
+        "links": [],
+        "slides": false,
+        "audio": "",
+        "video": ""
+      },
+      {
         "break": true,
         "duration": 90,
         "title": "Lunch break (90 mins)"
