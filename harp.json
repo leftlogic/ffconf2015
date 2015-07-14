@@ -15,7 +15,7 @@
         "conference": false,
         "workshops": false,
         "debug-and-tools": false,
-        "testing": false
+        "perfmatters": false
       },
       "mode": "schedule",
       "comments": {
