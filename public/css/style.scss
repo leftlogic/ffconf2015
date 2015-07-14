@@ -385,6 +385,13 @@ a.tickets-button {
   -webkit-overflow-scrolling: touch;
 }
 
+.diversity p {
+  margin: 28px 0;
+
+  &:last-child {
+    margin-bottom: 88px; //30px
+  }
+}
 
 @import "mq";
 @import "xwing";

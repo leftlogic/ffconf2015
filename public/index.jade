@@ -65,6 +65,8 @@ html(id=id)
       if config.phase >= 0.5
         include _partials/locations
 
+      include _partials/diversity
+
       div#xwing.xwing-wrapper.fixedsticky
         include _partials/xwing
         if config.phase < 1
