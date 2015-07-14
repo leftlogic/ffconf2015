@@ -70,6 +70,11 @@
         "name": "Google Chrome",
         "url": "https://developers.google.com/live/chrome/",
         "img": "chrome.png"
+      },
+      {
+        "name": "uSwitch",
+        "url": "http://www.uswitch.com/",
+        "img": "uswitch.png"
       }
     ],
     "silver": [
@@ -77,6 +82,11 @@
         "name": "brandwatch",
         "url": "http://www.brandwatch.com/",
         "img": "brandwatch.png"
+      },
+      {
+        "name": "Unruly",
+        "url": "http://tech.unruly.co",
+        "img": "unruly.png"
       }
     ],
     "bronze": [
