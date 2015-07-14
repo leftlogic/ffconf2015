@@ -127,7 +127,7 @@ svg(viewbox='0 0 1430 434', version='1.1', xmlns='http://www.w3.org/2000/svg', x
     if button != ''
       g#xwing-link(transform='translate(560, 300)')
         if buy
-          a.anchor(xlink:href='http://leftlogic.stagehq.com', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', target='_blank', tabindex="1", role='link')
+          a.anchor(xlink:href=ticketUrl, xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', target='_blank', tabindex="1", role='link')
             rect.button(x='10', y='0', width='300', height='88', rx='10', ry='10')
             text(x='160', y='55', text-anchor='middle')!= button_svg
         else if buttonLink
