@@ -16,6 +16,7 @@ $svgheight: 349px;
 }
 
 #countdown {
+  background: black;
   font-family: 'OCR-A';
   bottom: 20px;
   left: 50%;
@@ -23,6 +24,21 @@ $svgheight: 349px;
   position: absolute;
   pointer-events: all;
 }
+
+.flash {
+  animation: flash 100ms steps(1) forwards infinite;
+  background: #000;
+}
+
+@-webkit-keyframes flash {
+  /* from {
+    background: #000;
+  } */
+  50% {
+    background: #f00;
+  }
+}
+
 
 .xwing-wrapper {
   // overflow: hidden;

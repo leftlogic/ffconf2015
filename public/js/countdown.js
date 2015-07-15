@@ -22,7 +22,7 @@ var hw = width/2;
 c.height = height;
 var hh = height/2;
 
-ctx.fillRect(0, 0, width, height);
+// ctx.fillRect(0, 0, width, height);
 ctx.strokeStyle = '#FFEB3B';
 
 var guid = 0;
@@ -81,7 +81,7 @@ function square(angle) {
 }
 
 function init() {
-  ctx.fillRect(0, 0, width, height);
+  // ctx.fillRect(0, 0, width, height);
   ctx.lineWidth = 1;
 
   ctx.save();
@@ -101,15 +101,21 @@ function pad(s, length) {
 }
 
 function text() {
-  var d = Date.parse('2015-07-15T11:00:00.000Z');
-  var t = pad(((d - Date.now()) / 1000).toFixed(0), 8);
+  var d = Date.parse('2015-07-15T10:00:00.000Z'); // GMT (not BST)
+  var seconds = (d - Date.now()) / 1000;
+  if (seconds < 0) { seconds = 0; }
+  var t = pad(seconds.toFixed(0), 8);
   var textWidth = ctx.measureText(t+'');
   ctx.fillText(t, width/2 - textWidth.width/2, 15);
+
+  if (seconds === 0) {
+    c.className = 'flash';
+  }
 }
 
 function paintToBack() {
   var data = c.toDataURL('image/png');
-  c.style.background = 'url(' + data + ')';
+  c.style.backgroundImage = 'url(' + data + ')';
   ctx.clearRect(0,0,width,height);
 }
 
@@ -202,7 +208,7 @@ function liveYet(error, live) {
 }
 
 function ping() {
-  var a = Date.parse('2015-07-15T11:00:00.000Z');
+  var a = Date.parse('2015-07-15T10:00:00.000Z');
   var b = Date.now();
   if (a - b < (1000 * 60)) {
     // start to request
