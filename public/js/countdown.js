@@ -1,5 +1,8 @@
+var livetime = '2015-07-15T10:00:00.000Z';
+// var livetime = '2015-07-15T08:00:00.000Z';
 (function () {
 'use strict';
+
 var c = document.getElementById('countdown'),
     ctx = c.getContext('2d'),
     width = 200,
@@ -101,7 +104,7 @@ function pad(s, length) {
 }
 
 function text() {
-  var d = Date.parse('2015-07-15T10:00:00.000Z'); // GMT (not BST)
+  var d = Date.parse(livetime); // GMT (not BST)
   var seconds = (d - Date.now()) / 1000;
   if (seconds < 0) { seconds = 0; }
   var t = pad(seconds.toFixed(0), 8);
@@ -208,7 +211,7 @@ function liveYet(error, live) {
 }
 
 function ping() {
-  var a = Date.parse('2015-07-15T10:00:00.000Z');
+  var a = Date.parse(livetime);
   var b = Date.now();
   if (a - b < (1000 * 60)) {
     // start to request
@@ -220,4 +223,6 @@ function ping() {
 
 try {
   ping();
-} catch (e) {};
+} catch (e) {
+  console.log(e);
+};

@@ -1,4 +1,4 @@
-- var menu = ['sessions', 'workshops', 'locations', 'sponsors']
+- var menu = ['sessions', 'workshops', 'diversity-statement', 'locations', 'sponsors']
 - var text = {}
 - text.location = 'Brighton UK'
 - text.date = completeDate.format('MMM Do YYYY')
@@ -12,15 +12,15 @@
 if config.phase == 1
   if config.soldout.conference
     if config.soldout.workshops
-      - line = 'Tickets for this phase sold out. More go on sale 16th July.'
+      - line = 'Tickets for this phase sold out. More go on sale 22nd July.'
       - button = 'Sold Out'
       - buy = false
     else
-      - line = 'Last few tickets for this batch. More go on sale 16th July.'
+      - line = 'Workshop (+conf pass) tickets available now. Next batch on sale 22nd July.'
       - button = 'Buy Tickets'
       - buy = true
   else
-    - line = 'Tickets available to buy. More go on sale at 11am.'
+    - line = 'Conference & workshop (+conf pass) tickets available to buy!'
     - button = 'Buy Tickets'
     - buy = true
 if config.phase >= 2 && config.phase < 4
@@ -30,11 +30,11 @@ if config.phase >= 2 && config.phase < 4
       - button = 'Sold Out'
       - buy = false
     else
-      - line = 'Tickets available to buy. Last few remaining.'
+      - line = 'Workshop (+conf pass) available to buy. Last few remaining.'
       - button = 'Buy Tickets'
       - buy = true
   else
-    - line = 'Tickets available to buy. Last batch.'
+    - line = 'Conference & workshop (+conf pass) available now. Last chance batch.'
     - button = 'Buy Tickets'
     - buy = true
 if config.phase == 4
