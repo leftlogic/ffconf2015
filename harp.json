@@ -12,7 +12,7 @@
     "config": {
       "phase": 1,
       "soldout": {
-        "conference": false,
+        "conference": true,
         "workshops": false,
         "//debug-and-tools": false,
         "//perfmatters": false
