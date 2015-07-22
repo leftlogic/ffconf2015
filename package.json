@@ -1,7 +1,7 @@
 {
   "name": "ffconf2015",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ffconf2015",
   "main": "server.js",
   "scripts": {
