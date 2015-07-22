@@ -87,6 +87,11 @@
         "name": "Unruly",
         "url": "http://tech.unruly.co",
         "img": "unruly.png"
+      },
+      {
+        "name": "Microsoft Edge",
+        "url": "http://dev.modern.ie",
+        "img": "edge-logo-clipped.svg"
       }
     ],
     "bronze": [
