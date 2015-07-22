@@ -92,6 +92,11 @@
         "name": "Microsoft Edge",
         "url": "http://dev.modern.ie",
         "img": "edge-logo-clipped.svg"
+      },
+      {
+        "name": "Lyst",
+        "url": "http://developers.lyst.com",
+        "img": "lyst.gif"
       }
     ],
     "bronze": [
