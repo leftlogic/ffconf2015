@@ -13,7 +13,7 @@
       "phase": 2,
       "soldout": {
         "conference": true,
-        "workshops": false,
+        "workshops": true,
         "//debug-and-tools": false,
         "//perfmatters": false
       },
