@@ -109,6 +109,11 @@
         "name": "potato",
         "url": "https://p.ota.to/",
         "img": "potato.png"
+      },
+      {
+        "name": "Telerik",
+        "url": "http://www.telerik.com/",
+        "img": "telerik.png"
       }
     ]
   },
