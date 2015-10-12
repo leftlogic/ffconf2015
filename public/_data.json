@@ -96,7 +96,7 @@
       {
         "name": "Lyst",
         "url": "http://developers.lyst.com",
-        "img": "lyst.gif"
+        "img": "lyst.png"
       }
     ],
     "bronze": [
@@ -118,7 +118,7 @@
       {
         "name": "Snyk",
         "url": "https://twitter.com/snyksec/",
-        "img": "snyk.svg"
+        "img": "snyk2.svg"
       }
     ]
   },
