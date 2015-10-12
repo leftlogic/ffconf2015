@@ -114,6 +114,11 @@
         "name": "Telerik",
         "url": "http://www.telerik.com/",
         "img": "telerik.png"
+      },
+      {
+        "name": "Snyk",
+        "url": "https://twitter.com/snyksec/",
+        "img": "snyk.svg"
       }
     ]
   },
