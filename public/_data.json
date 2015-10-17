@@ -136,64 +136,31 @@
       },
       {
         "duration": 40,
-        "title": "Practical(ly awesome) SVG",
+        "title": "JavaScript that doesn’t hurt your feelings",
         "speaker": {
           "name": "",
           "twitter": "",
           "photo": ""
         },
-        "description": "SVG is awesome, but can be quite overwhelming at first glance. In this talk, we will introduce what's possible in SVG, what tools we have at hand to help us, and how and why SVG can and should be a core part of every web developer's knowledge stack.",
-        "bio": "",
-        "links": [],
-        "slides": "",
-        "audio": "",
-        "video": ""
-      },
-
-      {
-        "duration": 40,
-        "title": "Code Calligrams",
-        "speaker": {
-          "name": "",
-          "twitter": "",
-          "photo": ""
-        },
-        "description": "How do we draw new worlds, using nothing else than the languages of the Web?",
-        "bio": "",
-        "links": [],
-        "slides": "",
-        "audio": "",
-        "video": ""
-      },
-      {
-        "duration": 40,
-        "title": "Operations: a developer's guide",
-        "speaker": {
-          "name": "",
-          "twitter": "",
-          "photo": ""
-        },
-        "description": "An introduction to the web ops skills that will help you be a better developer. What you need to know about virtualisation, containerisation and wrangling servers, and some tools we use that might make development easier. I spent two years on the infrastructure team so you don't have to!",
+        "description": "JavaScript just had its 20th birthday this year and it has come a long way. But many fail to recognise this and still code like it’s 1999. This talk will take you through my favourite features of recent JavaScript editions, shows you how to use them in your project today and will give you an outlook of even better things to come.",
         "bio": "",
         "links": [],
         "slides": false,
         "audio": "",
         "video": ""
       },
-
-
       {
         "duration": 40,
-        "title": "A Talk about Everything",
+        "title": "SVG in motion",
         "speaker": {
           "name": "",
           "twitter": "",
           "photo": ""
         },
-        "description": "Software influences the lives of billions of humans every day. As people working on it, we face a broad variety of challenges – and we have a responsibility towards each of these humans. Let's take a look at the status of software development today, and see what each of us can do to act according to this responsibility.",
+        "description": "Scalable Vector Graphics (SVG) are taking over a lot of our design tools by offering us more flexibility over those tools. In this talk, we will cover everything we need to know before attempting to animate SVGs, including animation gotchas, how-tos and pre-animation requisites such as optimization and embedding, among others, and how each of those affects the animation process.",
         "bio": "",
         "links": [],
-        "slides": false,
+        "slides": "",
         "audio": "",
         "video": ""
       },
@@ -220,36 +187,6 @@
 
       {
         "duration": 40,
-        "title": "You should use <insert library/framework>, it's the bestestest!",
-        "speaker": {
-          "name": "",
-          "twitter": "",
-          "photo": ""
-        },
-        "description": "\"You should use [insert library or framework here], it's the bestestest!\" is pretty standard modern web development chatter. But how do you separate the hype from the reality? Let's have a look at how we can gather data to assess the fit of code to your projects.",
-        "bio": "",
-        "links": [],
-        "slides": false,
-        "audio": "",
-        "video": ""
-      },
-      {
-        "duration": 40,
-        "title": "JavaScript that doesn’t hurt your feelings",
-        "speaker": {
-          "name": "",
-          "twitter": "",
-          "photo": ""
-        },
-        "description": "JavaScript just had its 20th birthday this year and it has come a long way. But many fail to recognise this and still code like it’s 1999. This talk will take you through my favourite features of recent JavaScript editions, shows you how to use them in your project today and will give you an outlook of even better things to come.",
-        "bio": "",
-        "links": [],
-        "slides": false,
-        "audio": "",
-        "video": ""
-      },
-      {
-        "duration": 40,
         "title": "The Web Audio Phenomenon that Shall Not Be Named",
         "speaker": {
           "name": "",
@@ -269,12 +206,74 @@
         "title": "Lunch break (90 mins)"
       },
       {
+        "duration": 40,
+        "title": "Operations: a developer's guide",
+        "speaker": {
+          "name": "",
+          "twitter": "",
+          "photo": ""
+        },
+        "description": "An introduction to the web ops skills that will help you be a better developer. What you need to know about virtualisation, containerisation and wrangling servers, and some tools we use that might make development easier. I spent two years on the infrastructure team so you don't have to!",
+        "bio": "",
+        "links": [],
+        "slides": false,
+        "audio": "",
+        "video": ""
+      },
+      {
+        "duration": 40,
+        "title": "You should use <insert library/framework>, it's the bestestest!",
+        "speaker": {
+          "name": "",
+          "twitter": "",
+          "photo": ""
+        },
+        "description": "\"You should use [insert library or framework here], it's the bestestest!\" is pretty standard modern web development chatter. But how do you separate the hype from the reality? Let's have a look at how we can gather data to assess the fit of code to your projects.",
+        "bio": "",
+        "links": [],
+        "slides": false,
+        "audio": "",
+        "video": ""
+      },
+
+
+      {
         "break": true,
         "duration": 30,
         "title": "Cake break (30 mins)"
       },
 
+      {
+        "duration": 40,
+        "title": "Code Calligrams",
+        "speaker": {
+          "name": "",
+          "twitter": "",
+          "photo": ""
+        },
+        "description": "Programming is art: It is like painting, but instead of drawing on a canvas we populate computer screens with colours. And rather than using brushes, we combine bits and bytes to trace an ever-changing flow of images.\n\nIn this talk, you'll be introduced to the art of \"Creative Coding\" and how to generate beautiful new worlds, using nothing else than the languages of the Web.",
+        "bio": "",
+        "links": [],
+        "slides": "",
+        "audio": "",
+        "video": ""
+      },
 
+      {
+        "duration": 40,
+        "title": "A Talk about Everything",
+        "speaker": {
+          "name": "",
+          "twitter": "",
+          "photo": ""
+        },
+        "description": "Software influences the lives of billions of humans every day. As people working on it, we face a broad variety of challenges – and we have a responsibility towards each of these humans. Let's take a look at the status of software development today, and see what each of us can do to act according to this responsibility.",
+        "bio": "",
+        "links": [],
+        "slides": false,
+        "audio": "",
+        "video": ""
+      },
 
       {
         "break": true,
