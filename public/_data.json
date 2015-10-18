@@ -119,7 +119,13 @@
         "name": "Snyk",
         "url": "https://twitter.com/snyksec/",
         "img": "snyk2.svg"
+      },
+      {
+        "name": "Five Simple Steps",
+        "url": "http://www.fivesimplesteps.com/",
+        "img": "fss.gif"
       }
+
     ]
   },
   "sessions": {
