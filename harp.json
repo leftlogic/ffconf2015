@@ -10,7 +10,7 @@
     "ticketUrl" : "https://leftlogic.stagehq.com/",
     "source": "https://github.com/leftlogic/ffconf2015",
     "config": {
-      "phase": 2,
+      "phase": 3,
       "soldout": {
         "conference": true,
         "workshops": true,
