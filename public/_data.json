@@ -180,7 +180,7 @@
         "title": "Operations: a developer's guide",
         "speaker": {
           "name": "Anna Shipman",
-          "twitter": "@annashipman",
+          "twitter": "annashipman",
           "photo": "anna.jpg"
         },
         "description": "An introduction to the web ops skills that will help you be a better developer. What you need to know about virtualisation, containerisation and wrangling servers, and some tools we use that might make development easier. I spent two years on the infrastructure team so you don't have to!",
