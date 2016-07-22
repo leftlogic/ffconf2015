@@ -153,7 +153,7 @@
         "links": [],
         "slides": false,
         "audio": "",
-        "video": ""
+        "video": "https://www.youtube.com/watch?v=4NmkIjUBZmU&index=1&list=PLXmT1r4krsTqtLdWln2ritJZTjd5a06h2"
       },
       {
         "duration": 40,
@@ -168,7 +168,7 @@
         "links": [],
         "slides": "",
         "audio": "",
-        "video": ""
+        "video": "https://www.youtube.com/watch?v=3TP2UVkbGHs&index=2&list=PLXmT1r4krsTqtLdWln2ritJZTjd5a06h2"
       },
       {
         "break": true,
@@ -186,9 +186,9 @@
         "description": "An introduction to the web ops skills that will help you be a better developer. What you need to know about virtualisation, containerisation and wrangling servers, and some tools we use that might make development easier. I spent two years on the infrastructure team so you don't have to!",
         "bio": "",
         "links": [],
-        "slides": false,
+        "slides": "http://www.slideshare.net/annashipman/operations-a-developers-guide",
         "audio": "",
-        "video": ""
+        "video": "https://www.youtube.com/watch?v=y6hbrS3DheU&index=3&list=PLXmT1r4krsTqtLdWln2ritJZTjd5a06h2"
       },
       {
         "duration": 40,
@@ -201,9 +201,9 @@
         "description": "Natural languages have many nooks and crannies, but there's a particular rabbit hole that will obsess you from the start. In this talk, you'll learn about the oddest psychological phenomenon ever to be thrown at getUserMedia and the odd parallels between learning human, natural languages and learning programming languages.",
         "bio": "",
         "links": [],
-        "slides": false,
+        "slides": "https://johnkpaul.github.io/presentations/ffconf/2015/WebAudioPhenomenon/assets/player/KeynoteDHTMLPlayer.html",
         "audio": "",
-        "video": ""
+        "video": "https://www.youtube.com/watch?v=ztZ3fFlShmg&index=4&list=PLXmT1r4krsTqtLdWln2ritJZTjd5a06h2"
       },
       {
         "break": true,
@@ -221,9 +221,9 @@
         "description": "The mobile web-vs-native debate rages on–who's winning? How can we create mobile experiences that are accessible and reliable to people with disabilities? In this talk, we'll dive head-first into the mobile debate and reemerge informed on how we can use our skills as web developers to create brilliant mobile apps.",
         "bio": "",
         "links": [],
-        "slides": false,
+        "slides": "http://marcysutton.github.io/mobile-a11y/",
         "audio": "",
-        "video": ""
+        "video": "https://www.youtube.com/watch?v=Jp6-9X-ZClk&index=5&list=PLXmT1r4krsTqtLdWln2ritJZTjd5a06h2"
       },
 
       {
@@ -237,9 +237,9 @@
         "description": "\"You should use [insert library or framework here], it's the bestestest!\" is pretty standard modern web development chatter. But how do you separate the hype from the reality? Let's have a look at how we can gather data to assess the fit of code to your projects.",
         "bio": "",
         "links": [],
-        "slides": false,
+        "slides": "https://speakerdeck.com/paullewis/framework-here-its-the-bestestest",
         "audio": "",
-        "video": ""
+        "video": "https://www.youtube.com/watch?v=_yCz1TA0EL4&index=6&list=PLXmT1r4krsTqtLdWln2ritJZTjd5a06h2"
       },
 
 
@@ -260,9 +260,9 @@
         "description": "Programming is art: It is like painting, but instead of drawing on a canvas we populate computer screens with colours. And rather than using brushes, we combine bits and bytes to trace an ever-changing flow of images.\n\nIn this talk, you'll be introduced to the art of \"Creative Coding\" and how to generate beautiful new worlds, using nothing else than the languages of the Web.",
         "bio": "",
         "links": [],
-        "slides": "",
+        "slides": "https://speakerdeck.com/aemkei/code-calligrams",
         "audio": "",
-        "video": ""
+        "video": "https://www.youtube.com/watch?v=-QZSJx8oXus&index=7&list=PLXmT1r4krsTqtLdWln2ritJZTjd5a06h2"
       },
 
       {
@@ -278,7 +278,7 @@
         "links": [],
         "slides": false,
         "audio": "",
-        "video": ""
+        "video": "https://www.youtube.com/watch?v=CZx7rYoq1Uw&index=8&list=PLXmT1r4krsTqtLdWln2ritJZTjd5a06h2"
       },
 
       {
