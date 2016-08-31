@@ -6,6 +6,13 @@ var moment = require('moment');
 var outputPath = __dirname + '/www';
 var port = process.env.PORT || 9000;
 
+app.disable('x-powered-by');
+
+app.use((req, res, next) => {
+  res.setHeader('x-powered-by', 'ffconf');
+  next();
+});
+
 global.idify = function (s) { return s.replace(/&.*?;/g, '').replace(/\s+/g, '-').replace(/[^\w\-]/g, '').toLowerCase(); };
 
 // this line, although dirty, ensures that Harp templates
