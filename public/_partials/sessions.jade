@@ -16,8 +16,8 @@ section.main(class='session-style-' + config.mode, role='region', aria-labelledb
   //-         small  + VAT
   ol.sessions-wrapper
     - var totalSessions = 0;
+    include wot
     if config.phase < 3
-      include wot
     each session, index in public._data.sessions.sessions
       - if (!session.start) {
       -   session.start = sessionTime.format('HH:mm')
