@@ -1,13 +1,13 @@
 {
   "name": "@remy/ffconf2015",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "ffconf2015",
   "main": "server.js",
   "scripts": {
     "start": "node ."
   },
   "engines": {
-    "node": "5"
+    "node": 7
   },
   "repository": {
     "type": "git",
@@ -20,9 +20,9 @@
   },
   "homepage": "http://2015.ffconf.org",
   "dependencies": {
-    "express": "^4.13.0",
-    "harp": "*",
+    "express": "^4.15.3",
+    "harp": "^0.24.0",
     "harp-static": "0.0.2",
-    "moment": "^2.10.3"
+    "moment": "^2.18.1"
   }
 }
